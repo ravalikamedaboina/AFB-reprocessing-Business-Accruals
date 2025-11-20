@@ -60,6 +60,8 @@ function deduplicateAccrualRecords(records) {
 const fs = require("fs");
 const csv = require("csv-parser");
 const axios = require("axios");
+const { toZonedTime, fromZonedTime, formatInTimeZone } = require("date-fns-tz");
+const { parseISO } = require("date-fns");
 
 // Configuration
 const CONFIG = {
@@ -113,7 +115,7 @@ const CONFIG = {
   partnerCode: "AFB", // Partner code for Alaska for Business
   requestDelay: 1000, // Delay between API requests (ms)
   testMode: false, // Process all records
-  testModeLimit: null, // No limit
+  testModeLimit: 10, // Test with 10 records
 
   // Dynamic output files - will be set based on input CSV filename
   getOutputFiles: function (csvFile = null) {
@@ -141,6 +143,7 @@ const CONFIG = {
       customers: `${outputDir}/afb-customers-only.json`,
       accruals: `${outputDir}/afb-accrual-records.json`,
       accrualsCsv: `${outputDir}/afb-accrual-records.csv`,
+      failedCsv: `${outputDir}/failed-records.csv`,
       nonAfbCsv: `${outputDir}/non-afb-records.csv`,
       pnr404Csv: `${outputDir}/pnr-404-records.csv`,
       summary: `${outputDir}/accrual-summary-report.md`,
@@ -172,7 +175,7 @@ async function getAccessToken() {
     return authToken;
   }
 
-  console.log("ðŸ” Requesting new OAuth2 token...");
+  console.log("🔐 Requesting new OAuth2 token...");
 
   try {
     const response = await axios.post(
@@ -197,9 +200,9 @@ async function getAccessToken() {
       const expiresInMs = (response.data.expires_in || 3600) * 1000 * 0.9;
       tokenExpiry = Date.now() + expiresInMs;
 
-      console.log("âœ… OAuth2 token obtained successfully");
+      console.log("✅ OAuth2 token obtained successfully");
       console.log(
-        `ðŸ•’ Token expires in: ${Math.round(expiresInMs / 1000 / 60)} minutes`
+        `🕒 Token expires in: ${Math.round(expiresInMs / 1000 / 60)} minutes`
       );
 
       return authToken;
@@ -207,7 +210,7 @@ async function getAccessToken() {
       throw new Error("No access token in response");
     }
   } catch (error) {
-    console.error("âŒ Failed to obtain OAuth2 token:");
+    console.error("❌ Failed to obtain OAuth2 token:");
     if (error.response) {
       console.error(
         `   Status: ${error.response.status} ${error.response.statusText}`
@@ -228,7 +231,7 @@ async function getAccessToken() {
  */
 async function getMemberInfoAccessToken() {
   try {
-    console.log("ðŸ” Requesting member info OAuth2 token...");
+    console.log("🔐 Requesting member info OAuth2 token...");
 
     const params = new URLSearchParams();
     params.append("grant_type", "client_credentials");
@@ -244,8 +247,8 @@ async function getMemberInfoAccessToken() {
 
     if (response.status === 200 && response.data.access_token) {
       const expiresInMinutes = Math.floor(response.data.expires_in / 60);
-      console.log(`âœ… Member info OAuth2 token obtained successfully`);
-      console.log(`ðŸ•’ Token expires in: ${expiresInMinutes} minutes`);
+      console.log(`✅ Member info OAuth2 token obtained successfully`);
+      console.log(`🕒 Token expires in: ${expiresInMinutes} minutes`);
       return response.data.access_token;
     }
 
@@ -254,7 +257,7 @@ async function getMemberInfoAccessToken() {
     );
   } catch (error) {
     console.error(
-      "ðŸ’¥ Error obtaining member info OAuth2 token:",
+      "💥 Error obtaining member info OAuth2 token:",
       error.response?.data || error.message
     );
     throw new Error("Member info OAuth2 authentication failed");
@@ -268,7 +271,7 @@ async function getMemberInfoAccessToken() {
  */
 async function callMemberInfoAPI(mileagePlanNumber) {
   try {
-    console.log(`ðŸ‘¤ Calling Member Info v3 API for: ${mileagePlanNumber}`);
+    console.log(`👤 Calling Member Info v3 API for: ${mileagePlanNumber}`);
 
     const accessToken = await getMemberInfoAccessToken();
     const url = `${CONFIG.memberInfoApi.baseUrl}/${CONFIG.memberInfoApi.endpoint}`;
@@ -278,7 +281,7 @@ async function callMemberInfoAPI(mileagePlanNumber) {
       LoyaltyNumber: mileagePlanNumber,
     };
 
-    console.log(`ðŸŒ Member Info API URL: ${url}`);
+    console.log(`🌐 Member Info API URL: ${url}`);
 
     const response = await axios.post(url, requestPayload, {
       headers: {
@@ -292,9 +295,9 @@ async function callMemberInfoAPI(mileagePlanNumber) {
 
     if (response.status === 200 && response.data) {
       console.log(
-        `âœ… Member Info API Success: ${response.status} ${response.statusText}`
+        `✅ Member Info API Success: ${response.status} ${response.statusText}`
       );
-      console.log(`ðŸ‘¤ Member data retrieved for: ${mileagePlanNumber}`);
+      console.log(`👤 Member data retrieved for: ${mileagePlanNumber}`);
 
       return {
         mileagePlanNumber,
@@ -312,7 +315,7 @@ async function callMemberInfoAPI(mileagePlanNumber) {
       data: null,
     };
   } catch (error) {
-    console.log(`âŒ Member Info API Error for ${mileagePlanNumber}:`);
+    console.log(`❌ Member Info API Error for ${mileagePlanNumber}:`);
     console.log(
       `   Status: ${error.response?.status || "Network Error"} ${
         error.response?.statusText || error.message
@@ -351,12 +354,12 @@ function extractTicketNumberFromPayload(payloadString) {
     ) {
       const ticketNumber = payload.Passenger.ticketDetails[0].ticketNumber;
       console.log(
-        `ðŸŽ« Extracted specific ticket number from CSV: ${ticketNumber}`
+        `🎫 Extracted specific ticket number from CSV: ${ticketNumber}`
       );
       return ticketNumber;
     }
 
-    console.log(`âš ï¸ No ticket number found in CSV payload`);
+    console.log(`⚠️ No ticket number found in CSV payload`);
     return null;
   } catch (error) {
     console.error(
@@ -398,16 +401,14 @@ function extractBookingDateFromPayload(payloadString) {
     ) {
       const ticketDate = payload.Passenger.ticketDetails[0].dateTicketIssuedCT;
       if (ticketDate) {
-        console.log(`ðŸ“… Found ticket issue date: ${ticketDate}`);
+        console.log(`📅 Found ticket issue date: ${ticketDate}`);
         return ticketDate;
       }
     }
 
     // Fallback to departure date
     if (payload.departureDateStnLocal) {
-      console.log(
-        `ðŸ“… Using departure date: ${payload.departureDateStnLocal}`
-      );
+      console.log(`📅 Using departure date: ${payload.departureDateStnLocal}`);
       return payload.departureDateStnLocal;
     }
 
@@ -542,7 +543,7 @@ function formatDateToYYYYMMDD(dateValue) {
 
   // Check if date is valid
   if (isNaN(date.getTime())) {
-    console.log(`âš ï¸ Invalid date: ${dateValue}`);
+    console.log(`⚠️ Invalid date: ${dateValue}`);
     return "";
   }
 
@@ -563,6 +564,12 @@ async function extractAccrualData(
   specificTicketNumber = null
 ) {
   const accrualRecords = [];
+  const failures = {
+    memberInfoFailed: false,
+    ticketInfoFailed: false,
+    memberInfoError: null,
+    ticketInfoError: null,
+  };
 
   if (!bookingData || !bookingData.bookings) {
     return accrualRecords;
@@ -576,9 +583,7 @@ async function extractAccrualData(
     transactionDate = formatDateToYYYYMMDD(
       pnrBusinessData.BookingDetails.CreationTimestamp
     );
-    console.log(
-      `ðŸ“… Using PNR Business Creation Timestamp: ${transactionDate}`
-    );
+    console.log(`📅 Using PNR Business Creation Timestamp: ${transactionDate}`);
   }
 
   // Store member data to avoid duplicate API calls
@@ -588,7 +593,7 @@ async function extractAccrualData(
     // Priority 2: Fall back to booking date from main API if no PNR business date
     if (!transactionDate) {
       transactionDate = formatDateToYYYYMMDD(booking.bookingDateCt);
-      console.log(`ðŸ“… Using booking date from main API: ${transactionDate}`);
+      console.log(`📅 Using booking date from main API: ${transactionDate}`);
     }
 
     if (booking.passengersInfo) {
@@ -646,12 +651,18 @@ async function extractAccrualData(
                   memberData: memberResult.data,
                 };
                 console.log(
-                  `ðŸ‘¤ Using member profile LastName: ${memberLastName} for MP #${mileagePlanNumber}`
+                  `👤 Using member profile LastName: ${memberLastName} for MP #${mileagePlanNumber}`
                 );
               } else {
                 console.log(
-                  `âŒ Member Info API returned no LastName for MP #${mileagePlanNumber} - skipping passenger`
+                  `❌ Member Info API returned no LastName for MP #${mileagePlanNumber} - skipping passenger`
                 );
+                // Track member info failure (no LastName)
+                memberInfoFailedRecords.push({
+                  ...row,
+                  reason: "Member Info API returned no LastName",
+                  mileagePlanNumber: mileagePlanNumber,
+                });
                 memberDataCache[mileagePlanNumber] = {
                   lastName: null,
                 };
@@ -659,8 +670,14 @@ async function extractAccrualData(
               }
             } else {
               console.log(
-                `âŒ Could not retrieve member profile for MP #${mileagePlanNumber} - skipping passenger`
+                `❌ Could not retrieve member profile for MP #${mileagePlanNumber} - skipping passenger`
               );
+              // Track member info failure (API error)
+              memberInfoFailedRecords.push({
+                ...row,
+                reason: "Could not retrieve member profile from API",
+                mileagePlanNumber: mileagePlanNumber,
+              });
               memberDataCache[mileagePlanNumber] = {
                 lastName: null,
               };
@@ -669,14 +686,14 @@ async function extractAccrualData(
           }
         } else {
           console.log(
-            `âŒ No mileage plan number available - skipping passenger`
+            `❌ No mileage plan number available - skipping passenger`
           );
           continue; // Skip passengers without mileage plan numbers
         }
 
         // If we don't have a valid LastName from API, skip this passenger
         if (!memberLastName) {
-          console.log(`âŒ No valid LastName from API for passenger - skipping`);
+          console.log(`❌ No valid LastName from API for passenger - skipping`);
           continue;
         }
 
@@ -748,7 +765,7 @@ async function extractAccrualData(
         if (pnrBusinessData?.CompanyMileagePlan) {
           accrualMileagePlan = pnrBusinessData.CompanyMileagePlan;
           console.log(
-            `ðŸ¢ Using CompanyMileagePlan from PNR Business: ${accrualMileagePlan}`
+            `🏢 Using CompanyMileagePlan from PNR Business: ${accrualMileagePlan}`
           );
 
           // Get member profile data for CompanyMileagePlan LastName
@@ -756,7 +773,7 @@ async function extractAccrualData(
             accrualLastName =
               memberDataCache[accrualMileagePlan].lastName || memberLastName;
             console.log(
-              `ðŸ‘¤ Using cached CompanyMileagePlan LastName: ${accrualLastName}`
+              `👤 Using cached CompanyMileagePlan LastName: ${accrualLastName}`
             );
           } else {
             // Call Member Info API for CompanyMileagePlan
@@ -780,22 +797,20 @@ async function extractAccrualData(
                   memberData: companyMemberResult.data,
                 };
                 console.log(
-                  `ðŸ‘¤ Using CompanyMileagePlan member profile LastName: ${accrualLastName} for MP #${accrualMileagePlan}`
+                  `👤 Using CompanyMileagePlan member profile LastName: ${accrualLastName} for MP #${accrualMileagePlan}`
                 );
               } else {
                 console.log(
-                  `âš ï¸ CompanyMileagePlan Member Info API returned data but no LastName field for MP #${accrualMileagePlan}`
+                  `⚠️ CompanyMileagePlan Member Info API returned data but no LastName field for MP #${accrualMileagePlan}`
                 );
                 console.log(
-                  `ðŸ“‹ CompanyMileagePlan API Response: ${JSON.stringify(
+                  `📋 CompanyMileagePlan API Response: ${JSON.stringify(
                     companyMemberResult.data,
                     null,
                     2
                   )}`
                 );
-                console.log(
-                  `âš ï¸ Using passenger lastName: ${memberLastName}`
-                );
+                console.log(`⚠️ Using passenger lastName: ${memberLastName}`);
                 accrualLastName = memberLastName;
                 memberDataCache[accrualMileagePlan] = {
                   lastName: memberLastName,
@@ -803,7 +818,7 @@ async function extractAccrualData(
               }
             } else {
               console.log(
-                `âš ï¸ Could not retrieve CompanyMileagePlan member profile for MP #${accrualMileagePlan}, using passenger lastName: ${memberLastName}`
+                `⚠️ Could not retrieve CompanyMileagePlan member profile for MP #${accrualMileagePlan}, using passenger lastName: ${memberLastName}`
               );
               accrualLastName = memberLastName;
               memberDataCache[accrualMileagePlan] = {
@@ -812,9 +827,7 @@ async function extractAccrualData(
             }
           }
         } else if (mileagePlanNumber) {
-          console.log(
-            `ðŸ‘¤ Using passenger's MileagePlan: ${mileagePlanNumber}`
-          );
+          console.log(`👤 Using passenger's MileagePlan: ${mileagePlanNumber}`);
         }
 
         // Create accrual record for the specific ticket only (one record per CSV row)
@@ -841,7 +854,7 @@ async function extractAccrualData(
 
           // Log creation of the specific accrual record
           console.log(
-            `âœ… Created accrual record for specific ticket: ${matchingTicketNumber} - ${passenger.firstName} ${accrualLastName}`
+            `✅ Created accrual record for specific ticket: ${matchingTicketNumber} - ${passenger.firstName} ${accrualLastName}`
           );
         } else if (matchingTicketNumber) {
           // Create record even without mileage plan for tracking (only for the specific ticket)
@@ -863,11 +876,11 @@ async function extractAccrualData(
           });
 
           console.log(
-            `âš ï¸ Created tracking record for specific ticket: ${matchingTicketNumber} - ${passenger.firstName} ${accrualLastName} (No MP #)`
+            `⚠️ Created tracking record for specific ticket: ${matchingTicketNumber} - ${passenger.firstName} ${accrualLastName} (No MP #)`
           );
         } else if (specificTicketNumber && !foundSpecificTicket) {
           console.log(
-            `âŒ Specific ticket ${specificTicketNumber} not found for passenger ${passenger.firstName} ${passenger.lastName}`
+            `❌ Specific ticket ${specificTicketNumber} not found for passenger ${passenger.firstName} ${passenger.lastName}`
           );
         }
       }
@@ -937,7 +950,7 @@ function extractCompanyInfo(bookingData) {
   });
 
   console.log(
-    `âœ… CSV file generated with ${totalAccrualRecordsInCSV} accrual records from ${accrualData.length} AFB customers`
+    `✅ CSV file generated with ${totalAccrualRecordsInCSV} accrual records from ${accrualData.length} AFB customers`
   );
 }
 
@@ -948,7 +961,7 @@ function extractCompanyInfo(bookingData) {
  */
 async function callAPIForRecord(recordLocator) {
   try {
-    console.log(`\nðŸ” Processing Record Locator: ${recordLocator}`);
+    console.log(`\n🔍 Processing Record Locator: ${recordLocator}`);
 
     // Get valid access token
     const accessToken = await getAccessToken();
@@ -968,14 +981,14 @@ async function callAPIForRecord(recordLocator) {
       timeout: 10000,
     });
 
-    console.log(`âœ… API Success: ${response.status} ${response.statusText}`);
+    console.log(`✅ API Success: ${response.status} ${response.statusText}`);
 
     // Check for AFB customer status
     const afbCheck = checkAFBCustomer(response.data);
-    console.log(`ðŸ¢ AFB Customer: ${afbCheck.hasAFB ? "âœ… YES" : "âŒ NO"}`);
+    console.log(`🏢 AFB Customer: ${afbCheck.hasAFB ? "✅ YES" : "❌ NO"}`);
 
     if (afbCheck.hasAFB && afbCheck.companyNames.length > 0) {
-      console.log(`ðŸ¢ Companies: ${afbCheck.companyNames.join(", ")}`);
+      console.log(`🏢 Companies: ${afbCheck.companyNames.join(", ")}`);
     }
 
     return {
@@ -986,7 +999,7 @@ async function callAPIForRecord(recordLocator) {
       afbCustomer: afbCheck,
     };
   } catch (error) {
-    console.log(`âŒ API Error for ${recordLocator}:`);
+    console.log(`❌ API Error for ${recordLocator}:`);
 
     if (error.response) {
       console.log(
@@ -1013,9 +1026,7 @@ async function callAPIForRecord(recordLocator) {
  * @returns {Promise<Object>} Test results with different scopes
  */
 async function testBusinessAPIScopes() {
-  console.log(
-    `\nðŸ” Testing different OAuth scopes for Business API access...`
-  );
+  console.log(`\n🔐 Testing different OAuth scopes for Business API access...`);
 
   const testScopes = [
     "guest_profile.search", // Current scope
@@ -1029,7 +1040,7 @@ async function testBusinessAPIScopes() {
   ];
 
   for (const scope of testScopes) {
-    console.log(`\nðŸ§ª Testing scope: "${scope}"`);
+    console.log(`\n🧪 Testing scope: "${scope}"`);
 
     try {
       const response = await axios.post(
@@ -1047,7 +1058,7 @@ async function testBusinessAPIScopes() {
       );
 
       if (response.data?.access_token) {
-        console.log(`   âœ… Token obtained successfully`);
+        console.log(`   ✅ Token obtained successfully`);
         console.log(`   Token type: ${response.data.token_type}`);
         console.log(
           `   Expires in: ${Math.floor(response.data.expires_in / 60)} minutes`
@@ -1066,7 +1077,7 @@ async function testBusinessAPIScopes() {
             timeout: 5000,
           });
 
-          console.log(`   âœ… Business API test call successful!`);
+          console.log(`   ✅ Business API test call successful!`);
           return {
             success: true,
             workingScope: scope,
@@ -1076,7 +1087,7 @@ async function testBusinessAPIScopes() {
           const status = apiError.response?.status;
           if (status === 404) {
             console.log(
-              `   âœ… Business API accessible (404 expected for test data)`
+              `   ✅ Business API accessible (404 expected for test data)`
             );
             return {
               success: true,
@@ -1084,19 +1095,19 @@ async function testBusinessAPIScopes() {
               token: response.data.access_token,
             };
           } else if (status === 401 || status === 403) {
-            console.log(`   âŒ Business API authorization failed: ${status}`);
+            console.log(`   ❌ Business API authorization failed: ${status}`);
           } else {
             console.log(
-              `   âš ï¸  Business API test call failed: ${status} (may still work with real data)`
+              `   ⚠️  Business API test call failed: ${status} (may still work with real data)`
             );
           }
         }
       } else {
-        console.log(`   âŒ No access token in response`);
+        console.log(`   ❌ No access token in response`);
       }
     } catch (error) {
       console.log(
-        `   âŒ OAuth failed: ${error.response?.status || error.message}`
+        `   ❌ OAuth failed: ${error.response?.status || error.message}`
       );
       if (error.response?.data) {
         console.log(`   Error: ${JSON.stringify(error.response.data)}`);
@@ -1115,7 +1126,7 @@ async function testBusinessAPIScopes() {
  */
 async function debugPNRBusinessAPI(confirmationCode, bookingDate) {
   console.log(
-    `\nðŸ”¬ DEBUG: Testing PNR Business API approaches for ${confirmationCode}`
+    `\n🔬 DEBUG: Testing PNR Business API approaches for ${confirmationCode}`
   );
 
   const accessToken = await getAccessToken();
@@ -1193,7 +1204,7 @@ async function debugPNRBusinessAPI(confirmationCode, bookingDate) {
     const config = testConfigs[i];
     const url = `${config.baseUrl}${config.params}`;
 
-    console.log(`\nðŸ§ª Test ${i + 1}: ${config.name}`);
+    console.log(`\n🧪 Test ${i + 1}: ${config.name}`);
     console.log(`   URL: ${url}`);
     console.log(`   Headers: ${JSON.stringify(config.headers, null, 2)}`);
 
@@ -1203,12 +1214,12 @@ async function debugPNRBusinessAPI(confirmationCode, bookingDate) {
         timeout: 10000,
       });
 
-      console.log(`   âœ… SUCCESS! Status: ${response.status}`);
+      console.log(`   ✅ SUCCESS! Status: ${response.status}`);
       console.log(`   Response: ${JSON.stringify(response.data, null, 2)}`);
       return { success: true, config, response: response.data };
     } catch (error) {
       console.log(
-        `   âŒ Failed: ${error.response?.status || "Network Error"} ${
+        `   ❌ Failed: ${error.response?.status || "Network Error"} ${
           error.response?.statusText || error.message
         }`
       );
@@ -1230,12 +1241,12 @@ async function debugPNRBusinessAPI(confirmationCode, bookingDate) {
  */
 async function getActualBookingDate(recordLocator) {
   try {
-    console.log(`ðŸ“… Getting actual booking date for: ${recordLocator}`);
+    console.log(`📅 Getting actual booking date for: ${recordLocator}`);
 
     const accessToken = await getAccessToken();
     const url = `https://apis.alaskaair.com/aag/1/guestServices/bookings/search/byrecordlocator?includeInActive=true&recordlocator=${recordLocator}`;
 
-    console.log(`ðŸŒ Booking Date API URL: ${url}`);
+    console.log(`🌐 Booking Date API URL: ${url}`);
 
     const response = await axios.get(url, {
       headers: {
@@ -1262,16 +1273,16 @@ async function getActualBookingDate(recordLocator) {
         booking.transactionDate;
 
       if (bookingDate) {
-        console.log(`âœ… Found booking date: ${bookingDate}`);
+        console.log(`✅ Found booking date: ${bookingDate}`);
         return bookingDate;
       }
     }
 
-    console.log(`âš ï¸ No booking date found in response`);
+    console.log(`⚠️ No booking date found in response`);
     return null;
   } catch (error) {
     console.log(
-      `âŒ Error getting booking date for ${recordLocator}: ${error.message}`
+      `❌ Error getting booking date for ${recordLocator}: ${error.message}`
     );
     return null;
   }
@@ -1286,7 +1297,7 @@ async function getActualBookingDate(recordLocator) {
 async function callPNRBusinessAPI(confirmationCode, bookingDate) {
   try {
     console.log(
-      `\nðŸ” Calling PNR Business API for: ${confirmationCode} (${bookingDate})`
+      `\n🔍 Calling PNR Business API for: ${confirmationCode} (${bookingDate})`
     );
 
     // Convert booking date to simple YYYY-MM-DD format
@@ -1305,7 +1316,7 @@ async function callPNRBusinessAPI(confirmationCode, bookingDate) {
       }
     }
 
-    console.log(`ðŸ“… Using formatted date: ${formattedDate}`);
+    console.log(`📅 Using formatted date: ${formattedDate}`);
 
     // Get the OAuth2 access token that we're already using for the main API
     const accessToken = await getAccessToken();
@@ -1313,7 +1324,7 @@ async function callPNRBusinessAPI(confirmationCode, bookingDate) {
     // Use the correct URL format from the cURL example
     const url = `https://apis.alaskaair.com/business/1/purchase/lookup?confirmationCode=${confirmationCode}&bookingDate=${formattedDate}`;
 
-    console.log(`ðŸŒ PNR Business API URL: ${url}`);
+    console.log(`🌐 PNR Business API URL: ${url}`);
 
     const response = await axios.get(url, {
       headers: {
@@ -1327,10 +1338,10 @@ async function callPNRBusinessAPI(confirmationCode, bookingDate) {
 
     if (response.status === 200 && response.data) {
       console.log(
-        `âœ… PNR Business API Success: ${response.status} ${response.statusText}`
+        `✅ PNR Business API Success: ${response.status} ${response.statusText}`
       );
       console.log(
-        `ðŸ“‹ Response data: ${JSON.stringify(response.data, null, 2)}`
+        `📋 Response data: ${JSON.stringify(response.data, null, 2)}`
       );
 
       return {
@@ -1351,7 +1362,7 @@ async function callPNRBusinessAPI(confirmationCode, bookingDate) {
       data: null,
     };
   } catch (error) {
-    console.log(`âŒ PNR Business API Error for ${confirmationCode}:`);
+    console.log(`❌ PNR Business API Error for ${confirmationCode}:`);
     console.log(
       `   Status: ${error.response?.status} ${
         error.response?.statusText || error.message
@@ -1384,7 +1395,7 @@ async function callPNRBusinessAPI(confirmationCode, bookingDate) {
 async function callTicketInfoAPI(ticketNumber, ticketingProvider) {
   try {
     console.log(
-      `\nðŸŽ« Calling Ticket Info API for: ${ticketNumber} (Provider: ${ticketingProvider})`
+      `\n🎫 Calling Ticket Info API for: ${ticketNumber} (Provider: ${ticketingProvider})`
     );
 
     // Get OAuth2 access token
@@ -1392,7 +1403,7 @@ async function callTicketInfoAPI(ticketNumber, ticketingProvider) {
 
     const url = `${CONFIG.ticketApi.baseUrl}/${ticketNumber}?ticketingProvider=${ticketingProvider}`;
 
-    console.log(`ðŸŒ Ticket Info API URL: ${url}`);
+    console.log(`🌐 Ticket Info API URL: ${url}`);
 
     const response = await axios.get(url, {
       headers: {
@@ -1406,9 +1417,9 @@ async function callTicketInfoAPI(ticketNumber, ticketingProvider) {
 
     if (response.status === 200 && response.data) {
       console.log(
-        `âœ… Ticket Info API Success: ${response.status} ${response.statusText}`
+        `✅ Ticket Info API Success: ${response.status} ${response.statusText}`
       );
-      console.log(`ðŸ“‹ Ticket data retrieved for: ${ticketNumber}`);
+      console.log(`📋 Ticket data retrieved for: ${ticketNumber}`);
 
       return {
         ticketNumber,
@@ -1428,7 +1439,7 @@ async function callTicketInfoAPI(ticketNumber, ticketingProvider) {
       data: null,
     };
   } catch (error) {
-    console.log(`âŒ Ticket Info API Error for ${ticketNumber}:`);
+    console.log(`❌ Ticket Info API Error for ${ticketNumber}:`);
     console.log(
       `   Status: ${error.response?.status} ${
         error.response?.statusText || error.message
@@ -1471,6 +1482,44 @@ function extractBookingDate(bookingData) {
 }
 
 /**
+ * Extracts bookingDateTimeCt from DAP reservation API response and converts to UTC
+ * @param {Object} bookingData - Booking response data from DAP reservation API
+ * @returns {string|null} UTC date in YYYY-MM-DD format or null
+ */
+function extractAndConvertBookingDateToUTC(bookingData) {
+  if (!bookingData?.bookings?.length) return null;
+
+  // Get the first booking's bookingDateTimeCt
+  const booking = bookingData.bookings[0];
+  if (booking.bookingDateTimeCt) {
+    try {
+      console.log(
+        `?? Original bookingDateTimeCt: ${booking.bookingDateTimeCt}`
+      );
+
+      // Parse the Central Time date string and convert to UTC
+      // First parse the date string
+      const centralDate = parseISO(booking.bookingDateTimeCt);
+
+      // Convert from Central Time to UTC using fromZonedTime
+      const utcDate = fromZonedTime(centralDate, "America/Chicago"); // Format as YYYY-MM-DD using formatInTimeZone
+      const formattedUtcDate = formatInTimeZone(utcDate, "UTC", "yyyy-MM-dd");
+
+      console.log(`?? Converted to UTC: ${formattedUtcDate}`);
+      return formattedUtcDate;
+    } catch (error) {
+      console.error(`? Error converting booking date to UTC: ${error.message}`);
+      console.log(
+        `?? Falling back to original date: ${booking.bookingDateTimeCt}`
+      );
+      return booking.bookingDateTimeCt;
+    }
+  }
+
+  return null;
+}
+
+/**
  * Main function to process CSV and create AFB accrual records
  * @returns {Promise<Array>} Array of AFB customer records with accrual data
  */
@@ -1478,21 +1527,23 @@ function extractBookingDate(bookingData) {
  * Process a single CSV file
  */
 async function processSingleCsvFile(csvFile) {
-  console.log(`\nðŸ“– Processing: ${csvFile}`);
+  console.log(`\n📖 Processing: ${csvFile}`);
   console.log("==================================");
 
   // Set up dynamic output files based on CSV filename
   const outputFiles = CONFIG.getOutputFiles(csvFile);
   console.log(
-    `ðŸ“ Output directory: ${require("path").dirname(outputFiles.accrualsCsv)}`
+    `📁 Output directory: ${require("path").dirname(outputFiles.accrualsCsv)}`
   );
-  console.log(`ðŸ“„ Processing file: ${csvFile}`);
+  console.log(`📄 Processing file: ${csvFile}`);
 
   const records = [];
   const results = [];
   const afbOnlyResults = [];
   const nonAfbRecords = [];
   const pnr404Records = [];
+  const memberInfoFailedRecords = [];
+  const ticketInfoFailedRecords = [];
 
   return new Promise((resolve, reject) => {
     fs.createReadStream(csvFile)
@@ -1525,7 +1576,7 @@ async function processSingleCsvFile(csvFile) {
 
         if (CONFIG.testMode) {
           console.log(
-            `ðŸ§ª TEST MODE: Processing only ${recordsToProcess.length} of ${records.length} records`
+            `🧪 TEST MODE: Processing only ${recordsToProcess.length} of ${records.length} records`
           );
         }
 
@@ -1535,7 +1586,7 @@ async function processSingleCsvFile(csvFile) {
         if (recordsToProcess.length > 0) {
           if (CONFIG.testMode) {
             console.log(
-              `ðŸ§ª Processing ${recordsToProcess.length} records in test mode`
+              `🧪 Processing ${recordsToProcess.length} records in test mode`
             );
           }
           console.log("\n");
@@ -1544,7 +1595,7 @@ async function processSingleCsvFile(csvFile) {
           for (let i = 0; i < recordsToProcess.length; i++) {
             const record = recordsToProcess[i];
 
-            console.log(`ðŸ“‹ Processing Record ${record.id}: ${record.name}`);
+            console.log(`📋 Processing Record ${record.id}: ${record.name}`);
             console.log(`Description: ${record.description}\n`);
 
             try {
@@ -1564,31 +1615,40 @@ async function processSingleCsvFile(csvFile) {
               // Check if this is an AFB customer
               const isAfbCustomer = checkAFBCustomer(apiResult.data);
 
-              if (isAfbCustomer && apiResult.success) {
-                console.log(`ðŸ¢ AFB Customer: âœ… YES`);
+              if (isAfbCustomer.hasAFB && apiResult.success) {
                 console.log(
-                  `ðŸ¢ Companies: ${extractCompanyInfo(apiResult.data).join(
+                  `🏢 Companies: ${extractCompanyInfo(apiResult.data).join(
                     ", "
                   )}`
                 );
-                console.log(`ðŸ’³ Processing AFB customer...`);
+                console.log(`💳 Processing AFB customer...`);
 
+                // Extract bookingDateTimeCt from DAP reservation response and convert to UTC
+                const utcBookingDate = extractAndConvertBookingDateToUTC(
+                  apiResult.data
+                );
                 // Call PNR Business API for purchase details
                 console.log(
-                  `ðŸ¢ Calling PNR Business API for purchase details...`
+                  `🏢 Calling PNR Business API for purchase details...`
                 );
                 console.log(
-                  `ðŸ“… Using booking date from payload: ${record.bookingDate}\n`
+                  `📅 Using booking date: ${
+                    utcBookingDate || record.bookingDate
+                  } (${
+                    utcBookingDate
+                      ? "from DAP API, converted to UTC"
+                      : "from CSV payload"
+                  })\n`
                 );
 
                 const pnrResult = await callPNRBusinessAPI(
                   record.recordLocator,
-                  record.bookingDate
+                  utcBookingDate || record.bookingDate
                 );
 
                 if (pnrResult.success) {
                   pnrBusinessData = pnrResult.data;
-                  console.log(`âœ… PNR Business data retrieved successfully`);
+                  console.log(`✅ PNR Business data retrieved successfully`);
                 } else {
                   if (pnrResult.status === 404) {
                     skipReason = `PNR Business API 404: ${pnrResult.error}`;
@@ -1609,7 +1669,7 @@ async function processSingleCsvFile(csvFile) {
                   // Use ticket number directly from payload for Ticket Info API
                   if (record.specificTicketNumber) {
                     console.log(
-                      `ðŸŽ« Calling Ticket Info API for ticket: ${record.specificTicketNumber}`
+                      `🎫 Calling Ticket Info API for ticket: ${record.specificTicketNumber}`
                     );
                     let ticketResult = await callTicketInfoAPI(
                       record.specificTicketNumber,
@@ -1618,17 +1678,29 @@ async function processSingleCsvFile(csvFile) {
                     if (ticketResult.success) {
                       ticketData.push(ticketResult.data);
                       console.log(
-                        `âœ… Ticket info retrieved for: ${record.specificTicketNumber}`
+                        `✅ Ticket info retrieved for: ${record.specificTicketNumber}`
                       );
                     } else {
                       console.log(
-                        `âš ï¸  Ticket info API call failed for: ${record.specificTicketNumber} with provider AS`
+                        `⚠️  Ticket info API call failed for: ${record.specificTicketNumber} with provider AS`
                       );
+                      // Track ticket info failure
+                      ticketInfoFailedRecords.push({
+                        ...row,
+                        reason: "Ticket Info API call failed",
+                        ticketNumber: record.specificTicketNumber,
+                      });
                     }
                   } else {
                     console.log(
-                      `âš ï¸  No ticket number found in payload, skipping ticket API call`
+                      `⚠️  No ticket number found in payload, skipping ticket API call`
                     );
+                    // Track ticket info failure (no ticket number)
+                    ticketInfoFailedRecords.push({
+                      ...row,
+                      reason: "No ticket number found in payload",
+                      ticketNumber: "N/A",
+                    });
                   }
                 }
 
@@ -1636,7 +1708,7 @@ async function processSingleCsvFile(csvFile) {
                 if (allApiCallsSuccessful) {
                   // Scenario 1: AFB customer with successful PNR response - add to main AFB results
                   console.log(
-                    `ðŸŽ« Processing for specific ticket: ${
+                    `🎫 Processing for specific ticket: ${
                       record.specificTicketNumber || "ALL TICKETS"
                     }`
                   );
@@ -1658,13 +1730,12 @@ async function processSingleCsvFile(csvFile) {
 
                   afbOnlyResults.push(enhancedResult);
                   console.log(
-                    `ðŸ¢ âœ… AFB ACCRUAL: Customer with ${accrualData.length} accrual record(s) for specific ticket`
+                    `🏢 ✅ AFB ACCRUAL: Customer with ${accrualData.length} accrual record(s) for specific ticket`
                   );
 
                   // Display accrual summary
                   accrualData.forEach((accrual, index) => {
-                    const issueFlag =
-                      accrual.Issues?.length > 0 ? " âš ï¸" : "";
+                    const issueFlag = accrual.Issues?.length > 0 ? " ⚠️" : "";
                     console.log(
                       `   ${index + 1}. ${accrual.FirstName} ${
                         accrual.LastName
@@ -1679,23 +1750,28 @@ async function processSingleCsvFile(csvFile) {
                     ...fullResult,
                     reason: skipReason,
                   });
-                  console.log(`ðŸ“ âœ… PNR 404: AFB customer - ${skipReason}`);
+                  console.log(`📝 ✅ PNR 404: AFB customer - ${skipReason}`);
                 } else {
-                  console.log(`ðŸ¢ âŒ SKIPPED: AFB customer - ${skipReason}`);
+                  console.log(`🏢 ❌ SKIPPED: AFB customer - ${skipReason}`);
                 }
               } else if (apiResult.success) {
                 // Scenario 2: Non-AFB customer - add to non-AFB records
-                nonAfbRecords.push(fullResult);
-                console.log(`ðŸ“ âœ… NON-AFB: Customer recorded`);
+                nonAfbRecords.push({
+                  ...fullResult,
+                  reason: "Non-AFB customer",
+                });
+                console.log(
+                  `⏭️ SKIPPED: Non-AFB customer - added to non-AFB CSV`
+                );
               } else {
-                console.log(`âŒ API FAILED: ${apiResult.error}`);
+                console.log(`❌ API FAILED: ${apiResult.error}`);
               }
 
               // Add delay between requests to be respectful to the API
               await new Promise((resolve) => setTimeout(resolve, 1000));
             } catch (error) {
               console.error(
-                `ðŸ’¥ Error processing record ${record.id}:`,
+                `💥 Error processing record ${record.id}:`,
                 error.message
               );
               results.push({
@@ -1706,11 +1782,11 @@ async function processSingleCsvFile(csvFile) {
           }
 
           // Summary - Show all record types
-          console.log("\n\nðŸ“Š PROCESSING RESULTS SUMMARY");
+          console.log("\n\n📊 PROCESSING RESULTS SUMMARY");
           console.log("==========================================");
           if (CONFIG.testMode) {
             console.log(
-              `ðŸ§ª TEST MODE: Processed ${recordsToProcess.length} of ${records.length} total records`
+              `🧪 TEST MODE: Processed ${recordsToProcess.length} of ${records.length} total records`
             );
           }
 
@@ -1720,13 +1796,17 @@ async function processSingleCsvFile(csvFile) {
           console.log(`Total records processed: ${results.length}`);
           console.log(`Successful API calls: ${successful.length}`);
           console.log(`Failed API calls: ${failed.length}`);
-          console.log(`ðŸ¢ AFB Accrual records: ${afbOnlyResults.length}`);
-          console.log(`ðŸ“ Non-AFB records: ${nonAfbRecords.length}`);
-          console.log(`ðŸ“ PNR 404 records: ${pnr404Records.length}`);
+          console.log(`🏢 AFB Accrual records: ${afbOnlyResults.length}`);
+          console.log(
+            `⏭️ Non-AFB records skipped: ${
+              successful.length - afbOnlyResults.length - pnr404Records.length
+            }`
+          );
+          console.log(`📝 PNR 404 records: ${pnr404Records.length}`);
 
           // Show details for AFB customers only
           if (afbOnlyResults.length > 0) {
-            console.log("\nðŸ¢ ===== AFB CUSTOMER RECORDS ONLY =====\n");
+            console.log("\n🏢 ===== AFB CUSTOMER RECORDS ONLY =====\n");
             afbOnlyResults.forEach((customer, index) => {
               console.log(
                 `${index + 1}. Record Locator: ${customer.recordLocator}`
@@ -1736,7 +1816,7 @@ async function processSingleCsvFile(csvFile) {
               console.log(`   AFB Company:`);
               const companies = extractCompanyInfo(customer.apiResult.data);
               companies.forEach((company) => {
-                console.log(`     â€¢ AFB CUSTOMER...${company}`);
+                console.log(`     • AFB CUSTOMER...${company}`);
               });
               console.log("");
             });
@@ -1751,19 +1831,19 @@ async function processSingleCsvFile(csvFile) {
           }, []);
 
           // Apply deduplication to accrual records
-          console.log(`ðŸ§¹ Deduplicating accrual records...`);
+          console.log(`🧹 Deduplicating accrual records...`);
           const { deduplicatedData, duplicatesRemoved } =
             deduplicateAccrualRecords(allAccrualRecords);
-          console.log(`âœ… Deduplication complete:`);
-          console.log(`   ðŸ“Š Original records: ${allAccrualRecords.length}`);
-          console.log(`   ðŸ—‘ï¸ Duplicates removed: ${duplicatesRemoved}`);
-          console.log(`   ✨ Unique records: ${deduplicatedData.length}`);
+          console.log(`✅ Deduplication complete:`);
+          console.log(`   📊 Original records: ${allAccrualRecords.length}`);
+          console.log(`   🗑️ Duplicates removed: ${duplicatesRemoved}`);
+          console.log(`   ? Unique records: ${deduplicatedData.length}`);
 
           // Generate CSV file
-          console.log(`ðŸ“‹ Generating AFB Accrual CSV file...`);
+          console.log(`📋 Generating AFB Accrual CSV file...`);
           await generateAccrualCSV(deduplicatedData, outputFiles.accrualsCsv);
           console.log(
-            `✅ CSV file generated with ${deduplicatedData.length} accrual records from ${afbOnlyResults.length} AFB customers\n`
+            `? CSV file generated with ${deduplicatedData.length} accrual records from ${afbOnlyResults.length} AFB customers\n`
           );
 
           // Save all data to JSON files
@@ -1773,47 +1853,19 @@ async function processSingleCsvFile(csvFile) {
               JSON.stringify(afbOnlyResults, null, 2)
             );
             console.log(
-              `ðŸ’¾ AFB customers data saved to: ${outputFiles.customers}`
+              `💾 AFB customers data saved to: ${outputFiles.customers}`
             );
 
             fs.writeFileSync(
               outputFiles.accruals,
               JSON.stringify(deduplicatedData, null, 2)
             );
-            console.log(
-              `ðŸ’° Accrual records saved to: ${outputFiles.accruals}`
-            );
+            console.log(`💰 Accrual records saved to: ${outputFiles.accruals}`);
 
+            console.log(`📋 Accrual CSV saved to: ${outputFiles.accrualsCsv}`);
             console.log(
-              `ðŸ“‹ Accrual CSV saved to: ${outputFiles.accrualsCsv}`
+              `📊 Total accrual records created: ${deduplicatedData.length}`
             );
-            console.log(
-              `ðŸ“Š Total accrual records created: ${deduplicatedRecords.length}`
-            );
-
-            // Generate CSV for non-AFB records
-            if (nonAfbRecords.length > 0) {
-              const nonAfbCsvData = nonAfbRecords.map((record) => ({
-                RecordLocator: record.recordLocator,
-                RecordId: record.id,
-                Name: record.name,
-                Description: record.description,
-                BookingDate: record.bookingDate,
-                APIStatus: record.apiResult.success ? "Success" : "Failed",
-                APIError: record.apiResult.error || "",
-              }));
-
-              const nonAfbCsvContent = [
-                Object.keys(nonAfbCsvData[0]).join(","),
-                ...nonAfbCsvData.map((row) => Object.values(row).join(",")),
-              ].join("\n");
-
-              fs.writeFileSync(outputFiles.nonAfbCsv, nonAfbCsvContent);
-            }
-            console.log(
-              `ðŸ“ Non-AFB records CSV saved to: ${outputFiles.nonAfbCsv}`
-            );
-            console.log(`ðŸ“Š Non-AFB records count: ${nonAfbRecords.length}`);
 
             // Generate CSV for PNR 404 records
             if (pnr404Records.length > 0) {
@@ -1835,11 +1887,71 @@ async function processSingleCsvFile(csvFile) {
               fs.writeFileSync(outputFiles.pnr404Csv, pnr404CsvContent);
             }
             console.log(
-              `ðŸ“ PNR 404 records CSV saved to: ${outputFiles.pnr404Csv}`
+              `📝 PNR 404 records CSV saved to: ${outputFiles.pnr404Csv}`
             );
-            console.log(`ðŸ“Š PNR 404 records count: ${pnr404Records.length}`);
+            console.log(`📊 PNR 404 records count: ${pnr404Records.length}`);
+
+            // Write member info failed records CSV
+            if (memberInfoFailedRecords.length > 0) {
+              const memberInfoFailedCsvData = memberInfoFailedRecords.map(
+                (record) => ({
+                  recordLocator: record.recordLocator,
+                  reason: record.reason,
+                  mileagePlanNumber: record.mileagePlanNumber,
+                  originalData: JSON.stringify(record),
+                })
+              );
+
+              const memberInfoFailedCsvContent = [
+                Object.keys(memberInfoFailedCsvData[0]).join(","),
+                ...memberInfoFailedCsvData.map((row) =>
+                  Object.values(row).join(",")
+                ),
+              ].join("\n");
+
+              fs.writeFileSync(
+                outputFiles.memberInfoFailedCsv,
+                memberInfoFailedCsvContent
+              );
+              console.log(
+                `� Member Info failed records CSV saved to: ${outputFiles.memberInfoFailedCsv}`
+              );
+              console.log(
+                `📊 Member Info failed records count: ${memberInfoFailedRecords.length}`
+              );
+            }
+
+            // Write ticket info failed records CSV
+            if (ticketInfoFailedRecords.length > 0) {
+              const ticketInfoFailedCsvData = ticketInfoFailedRecords.map(
+                (record) => ({
+                  recordLocator: record.recordLocator,
+                  reason: record.reason,
+                  ticketNumber: record.ticketNumber,
+                  originalData: JSON.stringify(record),
+                })
+              );
+
+              const ticketInfoFailedCsvContent = [
+                Object.keys(ticketInfoFailedCsvData[0]).join(","),
+                ...ticketInfoFailedCsvData.map((row) =>
+                  Object.values(row).join(",")
+                ),
+              ].join("\n");
+
+              fs.writeFileSync(
+                outputFiles.ticketInfoFailedCsv,
+                ticketInfoFailedCsvContent
+              );
+              console.log(
+                `📝 Ticket Info failed records CSV saved to: ${outputFiles.ticketInfoFailedCsv}`
+              );
+              console.log(
+                `📊 Ticket Info failed records count: ${ticketInfoFailedRecords.length}`
+              );
+            }
           } catch (error) {
-            console.error("ðŸ’¥ Error saving files:", error.message);
+            console.error("💥 Error saving files:", error.message);
           }
 
           // Return results summary
@@ -1849,29 +1961,33 @@ async function processSingleCsvFile(csvFile) {
               successful: successful.length,
               failed: failed.length,
               afbCount: afbOnlyResults.length,
-              nonAfbCount: nonAfbRecords.length,
+              nonAfbSkipped:
+                successful.length -
+                afbOnlyResults.length -
+                pnr404Records.length,
               pnr404Count: pnr404Records.length,
+              memberInfoFailedCount: memberInfoFailedRecords.length,
+              ticketInfoFailedCount: ticketInfoFailedRecords.length,
+              nonAfbRecordsCount: nonAfbRecords.length,
             },
             allResults: results,
             afbCustomers: afbOnlyResults,
-            nonAfbRecords: nonAfbRecords,
             pnr404Records: pnr404Records,
             accrualRecords: deduplicatedData,
           });
         } else {
-          console.log("âŒ No valid records found in CSV file");
+          console.log("❌ No valid records found in CSV file");
           resolve({
             summary: {
               totalProcessed: 0,
               successful: 0,
               failed: 0,
               afbCount: 0,
-              nonAfbCount: 0,
+              nonAfbSkipped: 0,
               pnr404Count: 0,
             },
             allResults: [],
             afbCustomers: [],
-            nonAfbRecords: [],
             pnr404Records: [],
             accrualRecords: [],
           });
@@ -1888,15 +2004,15 @@ async function processSingleCsvFile(csvFile) {
  * Process multiple CSV files
  */
 async function processCsvAndCallAPI() {
-  console.log("ðŸ“– AFB Customer Accrual Processor - Multiple Files");
+  console.log("📖 AFB Customer Accrual Processor - Multiple Files");
   console.log("==================================================");
-  console.log("ðŸ¢ Filtering for AFB customers only\n");
+  console.log("🏢 Filtering for AFB customers only\n");
 
   // Initialize authentication
   try {
     await getAccessToken();
   } catch (error) {
-    console.error("ðŸ’¥ Failed to initialize authentication. Exiting.");
+    console.error("💥 Failed to initialize authentication. Exiting.");
     throw error;
   }
 
@@ -1906,12 +2022,12 @@ async function processCsvAndCallAPI() {
       successful: 0,
       failed: 0,
       afbCount: 0,
-      nonAfbCount: 0,
+      nonAfbSkipped: 0,
       pnr404Count: 0,
     },
     allResults: [],
     afbCustomers: [],
-    nonAfbRecords: [],
+    pnr404Records: [],
     pnr404Records: [],
     accrualRecords: [],
   };
@@ -1926,16 +2042,15 @@ async function processCsvAndCallAPI() {
       allResults.summary.successful += fileResults.summary.successful;
       allResults.summary.failed += fileResults.summary.failed;
       allResults.summary.afbCount += fileResults.summary.afbCount;
-      allResults.summary.nonAfbCount += fileResults.summary.nonAfbCount;
+      allResults.summary.nonAfbSkipped += fileResults.summary.nonAfbSkipped;
       allResults.summary.pnr404Count += fileResults.summary.pnr404Count;
 
       allResults.allResults.push(...fileResults.allResults);
       allResults.afbCustomers.push(...fileResults.afbCustomers);
-      allResults.nonAfbRecords.push(...fileResults.nonAfbRecords);
       allResults.pnr404Records.push(...fileResults.pnr404Records);
       allResults.accrualRecords.push(...fileResults.accrualRecords);
     } catch (error) {
-      console.error(`ðŸ’¥ Error processing file ${csvFile}:`, error.message);
+      console.error(`💥 Error processing file ${csvFile}:`, error.message);
     }
   }
 
@@ -1948,31 +2063,32 @@ async function processCsvAndCallAPI() {
 if (require.main === module) {
   processCsvAndCallAPI()
     .then((results) => {
-      console.log(`\nðŸŽ‰ Multi-File Processing Complete!`);
-      console.log(`ðŸ“Š OVERALL SUMMARY:`);
+      console.log(`\n🎉 Multi-File Processing Complete!`);
+      console.log(`📊 OVERALL SUMMARY:`);
       console.log(
         `   Total records processed: ${results.summary.totalProcessed}`
       );
       console.log(`   Successful API calls: ${results.summary.successful}`);
       console.log(`   Failed API calls: ${results.summary.failed}`);
-      console.log(`   ðŸ¢ AFB accrual records: ${results.summary.afbCount}`);
-      console.log(`   ðŸ“ Non-AFB records: ${results.summary.nonAfbCount}`);
-      console.log(`   ðŸ“ PNR 404 records: ${results.summary.pnr404Count}`);
+      console.log(`   🏢 AFB accrual records: ${results.summary.afbCount}`);
+      console.log(
+        `   ⏭️ Non-AFB records skipped: ${results.summary.nonAfbSkipped}`
+      );
+      console.log(`   📝 PNR 404 records: ${results.summary.pnr404Count}`);
 
       if (results.afbCustomers.length > 0) {
         const totalAccruals = results.accrualRecords.length;
-        console.log(`ðŸ’° Total accrual records created: ${totalAccruals}`);
+        console.log(`💰 Total accrual records created: ${totalAccruals}`);
         console.log(
-          `ðŸ“„ All output files generated successfully for each month`
+          `📄 All output files generated successfully for each month`
         );
-        console.log(`\nðŸ“‹ Next steps:`);
+        console.log(`\n📋 Next steps:`);
         console.log(`   1. Review AFB accrual records for accuracy`);
-        console.log(`   2. Process non-AFB records as needed`);
-        console.log(`   3. Investigate PNR 404 records for resolution`);
-        console.log(`   4. Submit AFB records to mileage plan system`);
+        console.log(`   2. Investigate PNR 404 records for resolution`);
+        console.log(`   3. Submit AFB records to mileage plan system`);
 
         // Test Member Info API if we have AFB customers
-        console.log(`\nðŸ§ª Testing Member Info API...`);
+        console.log(`\n🧪 Testing Member Info API...`);
         if (results.afbCustomers[0]?.accrualRecords?.[0]?.MileagePlanNumber) {
           const testMpNumber =
             results.afbCustomers[0].accrualRecords[0].MileagePlanNumber;
@@ -1980,13 +2096,13 @@ if (require.main === module) {
           // We could add a test call here if needed
         }
       } else {
-        console.log(`âš ï¸  No AFB customers found in the input data`);
+        console.log(`⚠️  No AFB customers found in the input data`);
       }
 
       process.exit(0);
     })
     .catch((error) => {
-      console.error("\nðŸ’¥ Processing failed:", error.message);
+      console.error("\n💥 Processing failed:", error.message);
       console.error("Please check the input data and API configuration");
       process.exit(1);
     });
