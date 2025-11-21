@@ -10,6 +10,7 @@ function getOutputFiles(csvFile) {
   return {
     accrualsCsv: path.join(reportDir, "afb-accrual-records.csv"),
     failedCsv: path.join(reportDir, "failed-records.csv"),
+    nonAfbCsv: path.join(reportDir, "non-afb-records.csv"),
     customers: path.join(reportDir, "afb-customers-only.json"),
     accruals: path.join(reportDir, "afb-accrual-records.json"),
   };

@@ -491,21 +491,33 @@ function extractTicketInfoFromPayload(payloadData) {
 /**
  * Checks if booking data contains AFB customer remarks
  * @param {Object} bookingData - Booking response data from API
- * @returns {Object} { hasAFB: boolean, afbRemarks: Array, companyNames: Array }
+ * @returns {Object} { hasAFB: boolean, afbRemarks: Array, companyNames: Array, afbBookingIndex: number|null }
  */
 function checkAFBCustomer(bookingData) {
   if (!bookingData?.bookings) {
-    return { hasAFB: false, afbRemarks: [], companyNames: [] };
+    return {
+      hasAFB: false,
+      afbRemarks: [],
+      companyNames: [],
+      afbBookingIndex: null,
+    };
   }
 
   const afbRemarks = [];
   const companyNames = [];
   let hasAFB = false;
+  let afbBookingIndex = null;
 
   bookingData.bookings.forEach((booking, bookingIndex) => {
     booking.remarks?.forEach((remark, remarkIndex) => {
       if (remark.remarkLines?.toLowerCase().includes("afb customer")) {
         hasAFB = true;
+
+        // Store the first booking index that contains AFB remarks
+        if (afbBookingIndex === null) {
+          afbBookingIndex = bookingIndex;
+        }
+
         const remarkData = {
           bookingIndex,
           remarkIndex,
@@ -523,7 +535,7 @@ function checkAFBCustomer(bookingData) {
     });
   });
 
-  return { hasAFB, afbRemarks, companyNames };
+  return { hasAFB, afbRemarks, companyNames, afbBookingIndex };
 }
 
 /**
@@ -719,37 +731,51 @@ async function extractAccrualData(
             const ticketApiData = ticketData.find(
               (td) => td.TicketDetails && td.TicketDetails.length > 0
             );
-            let baseAmountFromApi = 0;
+            let totalBaseAmountFromApi = 0;
             if (
               ticketApiData &&
               ticketApiData.TicketDetails &&
               ticketApiData.TicketDetails.length > 0
             ) {
-              // Always use the first TicketDetails entry for base amount
-              const ticketDetail = ticketApiData.TicketDetails[0];
-              if (
-                ticketDetail.Ticket &&
-                ticketDetail.Ticket.Amounts &&
-                ticketDetail.Ticket.Amounts.New &&
-                ticketDetail.Ticket.Amounts.New.Base &&
-                ticketDetail.Ticket.Amounts.New.Base.Amount &&
-                ticketDetail.Ticket.Amounts.New.Base.Amount.Value != null
-              ) {
-                baseAmountFromApi =
-                  ticketDetail.Ticket.Amounts.New.Base.Amount.Value;
-                console.log(
-                  `[DEBUG] Extracted base amount from API response: ${baseAmountFromApi}`
-                );
-              } else {
-                console.log(
-                  "[DEBUG] No base amount found in first TicketDetails entry."
-                );
+              // Sum ALL TicketDetails entries with valid base amounts (matching C# logic)
+              console.log(
+                `[DEBUG] Processing ${ticketApiData.TicketDetails.length} ticket detail(s):`
+              );
+
+              for (const ticketDetail of ticketApiData.TicketDetails) {
+                if (
+                  ticketDetail.Ticket &&
+                  ticketDetail.Ticket.Amounts &&
+                  ticketDetail.Ticket.Amounts.New &&
+                  ticketDetail.Ticket.Amounts.New.Base &&
+                  ticketDetail.Ticket.Amounts.New.Base.Amount &&
+                  ticketDetail.Ticket.Amounts.New.Base.Amount.Value != null
+                ) {
+                  const baseAmount =
+                    ticketDetail.Ticket.Amounts.New.Base.Amount.Value;
+                  totalBaseAmountFromApi += baseAmount;
+                  console.log(
+                    `[DEBUG] Added base amount: ${baseAmount}, running total: ${totalBaseAmountFromApi}`
+                  );
+                } else {
+                  console.log(
+                    "[DEBUG] Skipping ticket detail - no valid base amount"
+                  );
+                }
               }
+
+              console.log(
+                `[DEBUG] Total base amount from all ticket details: ${totalBaseAmountFromApi}`
+              );
             } else {
               console.log("[DEBUG] No TicketDetails found in ticketData.");
             }
-            if (baseAmountFromApi > 0) {
-              totalBaseAmount = Math.ceil(baseAmountFromApi);
+            if (totalBaseAmountFromApi > 0) {
+              // Apply ceiling to the total (matching C# Math.Ceiling logic)
+              totalBaseAmount = Math.ceil(totalBaseAmountFromApi);
+              console.log(
+                `[DEBUG] Final points after ceiling: ${totalBaseAmount}`
+              );
             } else {
               // No base amount, skip record
               continue;
@@ -1484,17 +1510,91 @@ function extractBookingDate(bookingData) {
 /**
  * Extracts bookingDateTimeCt from DAP reservation API response and converts to UTC
  * @param {Object} bookingData - Booking response data from DAP reservation API
+ * @param {number|null} afbBookingIndex - Index of the booking with AFB customer remarks (defaults to 0 if null)
  * @returns {string|null} UTC date in YYYY-MM-DD format or null
  */
-function extractAndConvertBookingDateToUTC(bookingData) {
+function extractAndConvertBookingDateToUTC(
+  bookingData,
+  afbBookingIndex = null
+) {
   if (!bookingData?.bookings?.length) return null;
 
-  // Get the first booking's bookingDateTimeCt
-  const booking = bookingData.bookings[0];
+  // Use the AFB booking index if provided, otherwise use the first booking
+  const bookingIndex = afbBookingIndex !== null ? afbBookingIndex : 0;
+  const booking = bookingData.bookings[bookingIndex];
+
+  if (!booking) {
+    console.error(`❌ Booking at index ${bookingIndex} not found`);
+    return null;
+  }
+
   if (booking.bookingDateTimeCt) {
     try {
       console.log(
-        `?? Original bookingDateTimeCt: ${booking.bookingDateTimeCt}`
+        `📅 Using booking at index ${bookingIndex} (${
+          afbBookingIndex !== null ? "AFB booking" : "default"
+        })`
+      );
+      console.log(
+        `⏰ Original bookingDateTimeCt: ${booking.bookingDateTimeCt}`
+      );
+
+      // Parse the Central Time date string and convert to UTC
+      // First parse the date string
+      const centralDate = parseISO(booking.bookingDateTimeCt);
+
+      // Convert from Central Time to UTC using fromZonedTime
+      const utcDate = fromZonedTime(centralDate, "America/Chicago");
+
+      // Format as YYYY-MM-DD using formatInTimeZone
+      const formattedUtcDate = formatInTimeZone(utcDate, "UTC", "yyyy-MM-dd");
+
+      console.log(`✅ Converted to UTC: ${formattedUtcDate}`);
+      return formattedUtcDate;
+    } catch (error) {
+      console.error(
+        `❌ Error converting booking date to UTC: ${error.message}`
+      );
+      console.log(
+        `⚠️ Falling back to original date: ${booking.bookingDateTimeCt}`
+      );
+      return booking.bookingDateTimeCt;
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Extracts bookingDateTimeCt from DAP reservation API response and converts to UTC
+ * @param {Object} bookingData - Booking response data from DAP reservation API
+ * @param {number|null} afbBookingIndex - Index of the booking with AFB customer remarks (defaults to 0 if null)
+ * @returns {string|null} UTC date in YYYY-MM-DD format or null
+ */
+function extractAndConvertBookingDateToUTC(
+  bookingData,
+  afbBookingIndex = null
+) {
+  if (!bookingData?.bookings?.length) return null;
+
+  // Use the AFB booking index if provided, otherwise use the first booking
+  const bookingIndex = afbBookingIndex !== null ? afbBookingIndex : 0;
+  const booking = bookingData.bookings[bookingIndex];
+
+  if (!booking) {
+    console.error(`❌ Booking at index ${bookingIndex} not found`);
+    return null;
+  }
+
+  if (booking.bookingDateTimeCt) {
+    try {
+      console.log(
+        `📅 Using booking at index ${bookingIndex} (${
+          afbBookingIndex !== null ? "AFB booking" : "default"
+        })`
+      );
+      console.log(
+        `⏰ Original bookingDateTimeCt: ${booking.bookingDateTimeCt}`
       );
 
       // Parse the Central Time date string and convert to UTC
@@ -1505,12 +1605,14 @@ function extractAndConvertBookingDateToUTC(bookingData) {
       const utcDate = fromZonedTime(centralDate, "America/Chicago"); // Format as YYYY-MM-DD using formatInTimeZone
       const formattedUtcDate = formatInTimeZone(utcDate, "UTC", "yyyy-MM-dd");
 
-      console.log(`?? Converted to UTC: ${formattedUtcDate}`);
+      console.log(`✅ Converted to UTC: ${formattedUtcDate}`);
       return formattedUtcDate;
     } catch (error) {
-      console.error(`? Error converting booking date to UTC: ${error.message}`);
+      console.error(
+        `❌ Error converting booking date to UTC: ${error.message}`
+      );
       console.log(
-        `?? Falling back to original date: ${booking.bookingDateTimeCt}`
+        `⚠️ Falling back to original date: ${booking.bookingDateTimeCt}`
       );
       return booking.bookingDateTimeCt;
     }
@@ -1624,8 +1726,10 @@ async function processSingleCsvFile(csvFile) {
                 console.log(`💳 Processing AFB customer...`);
 
                 // Extract bookingDateTimeCt from DAP reservation response and convert to UTC
+                // Use the booking index that contains AFB customer remarks
                 const utcBookingDate = extractAndConvertBookingDateToUTC(
-                  apiResult.data
+                  apiResult.data,
+                  isAfbCustomer.afbBookingIndex
                 );
                 // Call PNR Business API for purchase details
                 console.log(
@@ -1746,11 +1850,23 @@ async function processSingleCsvFile(csvFile) {
                   });
                 } else if (isPnr404Error) {
                   // Scenario 3: AFB customer but PNR API returned 404 - add to PNR 404 records
+                  // Include the correct booking date from the AFB booking
+                  const correctBookingDate =
+                    utcBookingDate ||
+                    extractAndConvertBookingDateToUTC(
+                      apiResult.data,
+                      isAfbCustomer.afbBookingIndex
+                    );
+
                   pnr404Records.push({
                     ...fullResult,
                     reason: skipReason,
+                    bookingDate: correctBookingDate, // Override with the AFB booking date
                   });
                   console.log(`📝 ✅ PNR 404: AFB customer - ${skipReason}`);
+                  console.log(
+                    `📅 Using AFB booking date: ${correctBookingDate}`
+                  );
                 } else {
                   console.log(`🏢 ❌ SKIPPED: AFB customer - ${skipReason}`);
                 }
@@ -1949,6 +2065,38 @@ async function processSingleCsvFile(csvFile) {
               console.log(
                 `📊 Ticket Info failed records count: ${ticketInfoFailedRecords.length}`
               );
+            }
+
+            // Write non-AFB records CSV
+            if (nonAfbRecords.length > 0) {
+              const nonAfbCsvData = nonAfbRecords.map((record) => ({
+                RecordLocator: record.recordLocator,
+                RecordId: record.id || "N/A",
+                Name: record.name || "N/A",
+                Description: record.description || "N/A",
+                BookingDate: record.bookingDate || "N/A",
+                Reason: record.reason || "Non-AFB customer",
+                TicketNumber: record.specificTicketNumber || "N/A",
+              }));
+
+              const nonAfbCsvContent = [
+                Object.keys(nonAfbCsvData[0]).join(","),
+                ...nonAfbCsvData.map((row) =>
+                  Object.values(row)
+                    .map((val) =>
+                      typeof val === "string" && val.includes(",")
+                        ? `"${val}"`
+                        : val
+                    )
+                    .join(",")
+                ),
+              ].join("\n");
+
+              fs.writeFileSync(outputFiles.nonAfbCsv, nonAfbCsvContent);
+              console.log(
+                `📄 Non-AFB records CSV saved to: ${outputFiles.nonAfbCsv}`
+              );
+              console.log(`📊 Non-AFB records count: ${nonAfbRecords.length}`);
             }
           } catch (error) {
             console.error("💥 Error saving files:", error.message);
