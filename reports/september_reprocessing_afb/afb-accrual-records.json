@@ -1,0 +1,3818 @@
+[
+  {
+    "MileagePlanNumber": "621878526",
+    "CompanyMileagePlan": "621878526",
+    "LastName": "Oceanit Laboratories",
+    "FirstName": "SAMUEL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MRGESV0272118521120",
+    "TransactionDate": "2024-03-21",
+    "NoOfPoints": "171",
+    "RecordLocator": "MRGESV",
+    "TicketNumber": "0272118521120",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "OCEANIT LABORATORIES"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "992346003",
+    "CompanyMileagePlan": "992346003",
+    "LastName": "Servco Corporate Admin",
+    "FirstName": "JONDI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QNBGXY0272118306178",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "166",
+    "RecordLocator": "QNBGXY",
+    "TicketNumber": "0272118306178",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SERVCO CORPORATE ADMIN"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "602252044",
+    "CompanyMileagePlan": "602252044",
+    "LastName": "Y Hata and Company, Limited",
+    "FirstName": "MARYCARMELITE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KXRQSE0272118779550",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "272",
+    "RecordLocator": "KXRQSE",
+    "TicketNumber": "0272118779550",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "Y HATA AND COMPANY, LIMITED"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "535215925",
+    "CompanyMileagePlan": "535215925",
+    "LastName": "Central Pacific Bank",
+    "FirstName": "ROBERTO",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YQDPUN0272118753424",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "203",
+    "RecordLocator": "YQDPUN",
+    "TicketNumber": "0272118753424",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "CENTRAL PACIFIC BANK"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "697469463",
+    "CompanyMileagePlan": "697469463",
+    "LastName": "RM Towill",
+    "FirstName": "NORWIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QUPMAW0272118729155",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "175",
+    "RecordLocator": "QUPMAW",
+    "TicketNumber": "0272118729155",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "R. M. TOWILL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "697469463",
+    "CompanyMileagePlan": "697469463",
+    "LastName": "RM Towill",
+    "FirstName": "NORWIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QUPMAW0272118731226",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "175",
+    "RecordLocator": "QUPMAW",
+    "TicketNumber": "0272118731226",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "R. M. TOWILL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "697469463",
+    "CompanyMileagePlan": "697469463",
+    "LastName": "RM Towill",
+    "FirstName": "LYDIA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QMRXXQ0272117674593",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "185",
+    "RecordLocator": "QMRXXQ",
+    "TicketNumber": "0272117674593",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "R. M. TOWILL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "811362241",
+    "CompanyMileagePlan": "811362241",
+    "LastName": "Modivcare",
+    "FirstName": "GIAVANNA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IFBXYP0272118861946",
+    "TransactionDate": "2025-07-20",
+    "NoOfPoints": "107",
+    "RecordLocator": "IFBXYP",
+    "TicketNumber": "0272118861946",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "MODIVCARE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "697469463",
+    "CompanyMileagePlan": "697469463",
+    "LastName": "RM Towill",
+    "FirstName": "ANNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "CYAPWW0272118199243",
+    "TransactionDate": "2023-03-15",
+    "NoOfPoints": "213",
+    "RecordLocator": "CYAPWW",
+    "TicketNumber": "0272118199243",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "R. M. TOWILL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "453140531",
+    "CompanyMileagePlan": "453140531",
+    "LastName": "LKM Enterprises, Inc. dba AIRPRO Indoor Air Solutions",
+    "FirstName": "LOYALSON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QTWWGG0272118432716",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "203",
+    "RecordLocator": "QTWWGG",
+    "TicketNumber": "0272118432716",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "LKM ENTERPRISES, INC. DBA AIRPRO INDOOR AIR SOLUTIONS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "833477875",
+    "CompanyMileagePlan": "833477875",
+    "LastName": "Kaiser Permanente - Patient - Travel 6 191082026",
+    "FirstName": "PHILIP",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "GCUNLJ0272118426370",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "122",
+    "RecordLocator": "GCUNLJ",
+    "TicketNumber": "0272118426370",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL 6 191082026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "448233892",
+    "CompanyMileagePlan": "448233892",
+    "LastName": "Dorvin D Leis Co Inc",
+    "FirstName": "KUKEAPONOOKALANI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FINWWO0272118513574",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "244",
+    "RecordLocator": "FINWWO",
+    "TicketNumber": "0272118513574",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DORVIN D. LEIS CO., INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "406964644",
+    "CompanyMileagePlan": "406964644",
+    "LastName": "Hawaii Energy Systems",
+    "FirstName": "FRANCISCO JAVIER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "EGMSQE0272118509226",
+    "TransactionDate": "2021-11-17",
+    "NoOfPoints": "249",
+    "RecordLocator": "EGMSQE",
+    "TicketNumber": "0272118509226",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII ENERGY SYSTEMS LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "621878526",
+    "CompanyMileagePlan": "621878526",
+    "LastName": "Oceanit Laboratories",
+    "FirstName": "STERLING",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "EARZWR0272118522082",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "171",
+    "RecordLocator": "EARZWR",
+    "TicketNumber": "0272118522082",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "OCEANIT LABORATORIES"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "857932714",
+    "CompanyMileagePlan": "857932714",
+    "LastName": "Dowling Co Inc Admin",
+    "FirstName": "JACK",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NXEHBI0272118506787",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "129",
+    "RecordLocator": "NXEHBI",
+    "TicketNumber": "0272118506787",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DOWLING CO INC ADMIN"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "139891846",
+    "CompanyMileagePlan": "139891846",
+    "LastName": "COASTAL TRANSPORTATION, IN",
+    "FirstName": "JAKE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "INQYVW0272117502731",
+    "TransactionDate": "2025-06-05",
+    "NoOfPoints": "1352",
+    "RecordLocator": "INQYVW",
+    "TicketNumber": "0272117502731",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "COASTAL TRANSPORTATION, INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "843913254",
+    "CompanyMileagePlan": "843913254",
+    "LastName": "Kazi Restaurants of Hawaii Inc Burger King",
+    "FirstName": "MARSHA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NRCANF0272118324782",
+    "TransactionDate": "2024-04-27",
+    "NoOfPoints": "157",
+    "RecordLocator": "NRCANF",
+    "TicketNumber": "0272118324782",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAZI FOODS OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "697469463",
+    "CompanyMileagePlan": "697469463",
+    "LastName": "RM Towill",
+    "FirstName": "PHILLIP",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YRZIBU0272117756553",
+    "TransactionDate": "2025-09-18",
+    "NoOfPoints": "203",
+    "RecordLocator": "YRZIBU",
+    "TicketNumber": "0272117756553",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "R. M. TOWILL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "HEREMIAS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WWLNMB0272118075353",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "254",
+    "RecordLocator": "WWLNMB",
+    "TicketNumber": "0272118075353",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "765164444",
+    "CompanyMileagePlan": "765164444",
+    "LastName": "Beachside Roofing, LLC",
+    "FirstName": "KAWIKA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "UFYBPL0272117755964",
+    "TransactionDate": "2025-07-07",
+    "NoOfPoints": "236",
+    "RecordLocator": "UFYBPL",
+    "TicketNumber": "0272117755964",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "BEACHSIDE ROOFING, LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "861951296",
+    "CompanyMileagePlan": "861951296",
+    "LastName": "Associa Hawaii",
+    "FirstName": "BERNADETTE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "UERROS0272117754231",
+    "TransactionDate": "2021-06-15",
+    "NoOfPoints": "138",
+    "RecordLocator": "UERROS",
+    "TicketNumber": "0272117754231",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ASSOCIA HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "670360692",
+    "CompanyMileagePlan": "670360692",
+    "LastName": "Liliuokalani Center 1",
+    "FirstName": "WESTON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QHMRFP0272118203256",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "208",
+    "RecordLocator": "QHMRFP",
+    "TicketNumber": "0272118203256",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "LILIUOKALANI TRUST - LILIUONAMOKU"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "273778886",
+    "CompanyMileagePlan": "273778886",
+    "LastName": "J MARTIN INC",
+    "FirstName": "JASON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WKAGRT0272118526475",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "370",
+    "RecordLocator": "WKAGRT",
+    "TicketNumber": "0272118526475",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "J. MARTIN BUILDERS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "607958492",
+    "CompanyMileagePlan": "607958492",
+    "LastName": "Island Flooring",
+    "FirstName": "VERNON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FHWRRI0272118518427",
+    "TransactionDate": "2019-03-09",
+    "NoOfPoints": "231",
+    "RecordLocator": "FHWRRI",
+    "TicketNumber": "0272118518427",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ISLAND FLOORING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "607958492",
+    "CompanyMileagePlan": "607958492",
+    "LastName": "Island Flooring",
+    "FirstName": "VERNON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FHWRRI0272118518429",
+    "TransactionDate": "2019-03-09",
+    "NoOfPoints": "231",
+    "RecordLocator": "FHWRRI",
+    "TicketNumber": "0272118518429",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ISLAND FLOORING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "1485072",
+    "CompanyMileagePlan": "1485072",
+    "LastName": "NORTH SLOPE BOROUGH",
+    "FirstName": "DOROTHY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FVWCJK0272117542538",
+    "TransactionDate": "2025-09-16",
+    "NoOfPoints": "399",
+    "RecordLocator": "FVWCJK",
+    "TicketNumber": "0272117542538",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "NORTH SLOPE BOROUGH"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "50310046",
+    "CompanyMileagePlan": "50310046",
+    "LastName": "ASRC CONSTRUCTION",
+    "FirstName": "JAMES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NDCTRI0272117416376",
+    "TransactionDate": "2025-09-15",
+    "NoOfPoints": "357",
+    "RecordLocator": "NDCTRI",
+    "TicketNumber": "0272117416376",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ASRC CONSTRUCTION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "97555581",
+    "CompanyMileagePlan": "97555581",
+    "LastName": "DOYON DRILLING INC",
+    "FirstName": "STAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FOCCEZ0272117430229",
+    "TransactionDate": "2025-09-15",
+    "NoOfPoints": "468",
+    "RecordLocator": "FOCCEZ",
+    "TicketNumber": "0272117430229",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DOYON DRILLING INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "282712835",
+    "CompanyMileagePlan": "282712835",
+    "LastName": "AES-EPT FOR SANTOS",
+    "FirstName": "JESSE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "EKBHSH0272117424247",
+    "TransactionDate": "2023-08-25",
+    "NoOfPoints": "375",
+    "RecordLocator": "EKBHSH",
+    "TicketNumber": "0272117424247",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "AES-EPT FOR SANTOS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "902362285",
+    "CompanyMileagePlan": "902362285",
+    "LastName": "Grace Pacific LLC Shop Plants and Quarry",
+    "FirstName": "CYRESS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WJCGMT0272118515820",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "257",
+    "RecordLocator": "WJCGMT",
+    "TicketNumber": "0272118515820",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "GRACE PACIFIC LLC SHOP PLANTS AND QUARRY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "635737734",
+    "CompanyMileagePlan": "635737734",
+    "LastName": "Hawaii Veterinary Vision Care",
+    "FirstName": "GREGORY ROBERT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WYBBWM0272118674302",
+    "TransactionDate": "2023-03-30",
+    "NoOfPoints": "102",
+    "RecordLocator": "WYBBWM",
+    "TicketNumber": "0272118674302",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "HAWAII VETERINARY VISION CARE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "902362285",
+    "CompanyMileagePlan": "902362285",
+    "LastName": "Grace Pacific LLC Shop Plants and Quarry",
+    "FirstName": "CYRESS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WJCGMT0272118515822",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "257",
+    "RecordLocator": "WJCGMT",
+    "TicketNumber": "0272118515822",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "GRACE PACIFIC LLC SHOP PLANTS AND QUARRY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "902362285",
+    "CompanyMileagePlan": "902362285",
+    "LastName": "Grace Pacific LLC Shop Plants and Quarry",
+    "FirstName": "NICHOLAS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IYEGXN0272118518517",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "272",
+    "RecordLocator": "IYEGXN",
+    "TicketNumber": "0272118518517",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GRACE PACIFIC LLC SHOP PLANTS AND QUARRY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "458771316",
+    "CompanyMileagePlan": "458771316",
+    "LastName": "T3 Wireless and Associates Inc",
+    "FirstName": "LE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JWVSFU0272118662010",
+    "TransactionDate": "2021-06-07",
+    "NoOfPoints": "116",
+    "RecordLocator": "JWVSFU",
+    "TicketNumber": "0272118662010",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "T3 WIRELESS AND ASSOCIATES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "806855243",
+    "CompanyMileagePlan": "806855243",
+    "LastName": "Grace Pacific LLC",
+    "FirstName": "ALICE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FDHEGQ0272118506333",
+    "TransactionDate": "2022-11-03",
+    "NoOfPoints": "230",
+    "RecordLocator": "FDHEGQ",
+    "TicketNumber": "0272118506333",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GRACE PACIFIC LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "764845690",
+    "CompanyMileagePlan": "764845690",
+    "LastName": "Unlimited Construction",
+    "FirstName": "CHANTEL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LSXKSP0272118515243",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "174",
+    "RecordLocator": "LSXKSP",
+    "TicketNumber": "0272118515243",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "UNLIMITED CONSTRUCTION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "771971550",
+    "CompanyMileagePlan": "771971550",
+    "LastName": "U-Haul Company of Hawaii",
+    "FirstName": "NAOMI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "UUNLLM0272118520393",
+    "TransactionDate": "2022-11-17",
+    "NoOfPoints": "174",
+    "RecordLocator": "UUNLLM",
+    "TicketNumber": "0272118520393",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "U-HAUL COMPANY OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847856321",
+    "CompanyMileagePlan": "847856321",
+    "LastName": "Kaiser Permanente - Patient - Travel II 191068086",
+    "FirstName": "MARIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SLCLIP0272118550465",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "188",
+    "RecordLocator": "SLCLIP",
+    "TicketNumber": "0272118550465",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL II 191068086"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847856321",
+    "CompanyMileagePlan": "847856321",
+    "LastName": "Kaiser Permanente - Patient - Travel II 191068086",
+    "FirstName": "MARIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SLCLIP0272118549968",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "188",
+    "RecordLocator": "SLCLIP",
+    "TicketNumber": "0272118549968",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL II 191068086"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847041506",
+    "CompanyMileagePlan": "847041506",
+    "LastName": "Jas W Glover Ltd",
+    "FirstName": "JOSEPH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HIGYRH0272118301157",
+    "TransactionDate": "2024-11-24",
+    "NoOfPoints": "340",
+    "RecordLocator": "HIGYRH",
+    "TicketNumber": "0272118301157",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "JAS W GLOVER LTD"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "789078032",
+    "CompanyMileagePlan": "789078032",
+    "LastName": "HPH Human Resources",
+    "FirstName": "JUDITH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DCACES0272118098630",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "185",
+    "RecordLocator": "DCACES",
+    "TicketNumber": "0272118098630",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HPH HUMAN RESOURCES"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "828936603",
+    "CompanyMileagePlan": "828936603",
+    "LastName": "Mokulua Solar LLC",
+    "FirstName": "VICTOR",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MAKSPM0272118912608",
+    "TransactionDate": "2025-09-30",
+    "NoOfPoints": "185",
+    "RecordLocator": "MAKSPM",
+    "TicketNumber": "0272118912608",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "MOKULUA SOLAR LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "757363331",
+    "CompanyMileagePlan": "757363331",
+    "LastName": "Papa Ola Lokahi",
+    "FirstName": "SHERIANN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NBAVHR0272118796492",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "171",
+    "RecordLocator": "NBAVHR",
+    "TicketNumber": "0272118796492",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "PAPA OLA LOKAHI"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "JAMES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DUBERH0272118769283",
+    "TransactionDate": "2020-02-27",
+    "NoOfPoints": "217",
+    "RecordLocator": "DUBERH",
+    "TicketNumber": "0272118769283",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "488940255",
+    "CompanyMileagePlan": "488940255",
+    "LastName": "Kaiser Permanete - Travel Kacie",
+    "FirstName": "CARLITO",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ARCJZB0272118664802",
+    "TransactionDate": "2025-09-28",
+    "NoOfPoints": "181",
+    "RecordLocator": "ARCJZB",
+    "TicketNumber": "0272118664802",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - TRAVEL KACIE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "811362241",
+    "CompanyMileagePlan": "811362241",
+    "LastName": "Modivcare",
+    "FirstName": "DEBORAH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NMGDOW0272118879061",
+    "TransactionDate": "2025-09-30",
+    "NoOfPoints": "208",
+    "RecordLocator": "NMGDOW",
+    "TicketNumber": "0272118879061",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "MODIVCARE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "488940255",
+    "CompanyMileagePlan": "488940255",
+    "LastName": "Kaiser Permanete - Travel Kacie",
+    "FirstName": "CARLITO",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ARCJZB0272118664803",
+    "TransactionDate": "2025-09-28",
+    "NoOfPoints": "181",
+    "RecordLocator": "ARCJZB",
+    "TicketNumber": "0272118664803",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - TRAVEL KACIE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "754404921",
+    "CompanyMileagePlan": "754404921",
+    "LastName": "Pacific Pipe Company Inc",
+    "FirstName": "JOHN ANTHONY TIMONER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JNIWFQ0272118206832",
+    "TransactionDate": "2020-02-29",
+    "NoOfPoints": "129",
+    "RecordLocator": "JNIWFQ",
+    "TicketNumber": "0272118206832",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "PACIFIC PIPE COMPANY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "JARRETT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LXCEKB0272118880975",
+    "TransactionDate": "2025-09-30",
+    "NoOfPoints": "217",
+    "RecordLocator": "LXCEKB",
+    "TicketNumber": "0272118880975",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "700974853",
+    "CompanyMileagePlan": "700974853",
+    "LastName": "SIMMONS STEEL CORPORATION",
+    "FirstName": "WAYNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OLQMGT0272118763404",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "222",
+    "RecordLocator": "OLQMGT",
+    "TicketNumber": "0272118763404",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "SIMMONS STEEL CORPORATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "660048336",
+    "CompanyMileagePlan": "660048336",
+    "LastName": "Kelleher, A Woodgrain Company",
+    "FirstName": "VICTOR",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DEUTUO0272117541510",
+    "TransactionDate": "2025-09-16",
+    "NoOfPoints": "115",
+    "RecordLocator": "DEUTUO",
+    "TicketNumber": "0272117541510",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KELLEHER, A WOODGRAIN COMPANY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "975716571",
+    "CompanyMileagePlan": "975716571",
+    "LastName": "Aloun Farm, Inc.",
+    "FirstName": "ROMELIE ANGEL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NKGICX0272118582099",
+    "TransactionDate": "2024-05-26",
+    "NoOfPoints": "166",
+    "RecordLocator": "NKGICX",
+    "TicketNumber": "0272118582099",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ALOUN FARM, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "754404921",
+    "CompanyMileagePlan": "754404921",
+    "LastName": "Pacific Pipe Company Inc",
+    "FirstName": "JOHN ANTHONY TIMONER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JNIWFQ0272118206833",
+    "TransactionDate": "2020-02-29",
+    "NoOfPoints": "129",
+    "RecordLocator": "JNIWFQ",
+    "TicketNumber": "0272118206833",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "PACIFIC PIPE COMPANY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "CHRISTINA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "UIFDHN0272118853275",
+    "TransactionDate": "2025-09-28",
+    "NoOfPoints": "138",
+    "RecordLocator": "UIFDHN",
+    "TicketNumber": "0272118853275",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "417029082",
+    "CompanyMileagePlan": "417029082",
+    "LastName": "Healthcare Association of Hawaii",
+    "FirstName": "JANNA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FNZLTZ0272118514243",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "134",
+    "RecordLocator": "FNZLTZ",
+    "TicketNumber": "0272118514243",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HEALTHCARE ASSOCIATION OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "524734151",
+    "CompanyMileagePlan": "524734151",
+    "LastName": "Loomis",
+    "FirstName": "KYLE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SBGZFT0272117773248",
+    "TransactionDate": "2023-01-24",
+    "NoOfPoints": "147",
+    "RecordLocator": "SBGZFT",
+    "TicketNumber": "0272117773248",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "LOOMIS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "400409741",
+    "CompanyMileagePlan": "400409741",
+    "LastName": "Charter Communications",
+    "FirstName": "JOSEPHINE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "GWOQIS0272118307829",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "120",
+    "RecordLocator": "GWOQIS",
+    "TicketNumber": "0272118307829",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "CHARTER COMMUNICATIONS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545831193",
+    "CompanyMileagePlan": "545831193",
+    "LastName": "Mas Tec Network Solutions Turf",
+    "FirstName": "BRANDON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QUHEUF0272118274143",
+    "TransactionDate": "2025-09-19",
+    "NoOfPoints": "290",
+    "RecordLocator": "QUHEUF",
+    "TicketNumber": "0272118274143",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MASTEC NETWORK SOLUTIONS TURF"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "463593476",
+    "CompanyMileagePlan": "463593476",
+    "LastName": "KSF, Inc.",
+    "FirstName": "BRANDY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "GCPIQG0272118301772",
+    "TransactionDate": "2024-07-01",
+    "NoOfPoints": "328",
+    "RecordLocator": "GCPIQG",
+    "TicketNumber": "0272118301772",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KSF, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545831193",
+    "CompanyMileagePlan": "545831193",
+    "LastName": "Mas Tec Network Solutions Turf",
+    "FirstName": "DARRELL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QUZYPD0272118274851",
+    "TransactionDate": "2025-09-20",
+    "NoOfPoints": "175",
+    "RecordLocator": "QUZYPD",
+    "TicketNumber": "0272118274851",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MASTEC NETWORK SOLUTIONS TURF"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847449256",
+    "CompanyMileagePlan": "847449256",
+    "LastName": "Enterprise Holdings 1",
+    "FirstName": "WAYNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DFMYPJ0272117547670",
+    "TransactionDate": "2024-02-27",
+    "NoOfPoints": "203",
+    "RecordLocator": "DFMYPJ",
+    "TicketNumber": "0272117547670",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ENTERPRISE MOBILITY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "941628284",
+    "CompanyMileagePlan": "941628284",
+    "LastName": "Tori Richard, Ltd.",
+    "FirstName": "TRENTON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MRUIGL0272118209909",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "171",
+    "RecordLocator": "MRUIGL",
+    "TicketNumber": "0272118209909",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "TORI RICHARD, LTD."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "555906875",
+    "CompanyMileagePlan": "555906875",
+    "LastName": "KAISER TRAVEL-NORA",
+    "FirstName": "YUEH MING",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NZZAYI0272118515036",
+    "TransactionDate": "2025-07-06",
+    "NoOfPoints": "140",
+    "RecordLocator": "NZZAYI",
+    "TicketNumber": "0272118515036",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER TRAVEL-NORA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "114522321",
+    "CompanyMileagePlan": "114522321",
+    "LastName": "SE ALASKA REGIONAL HEALTH",
+    "FirstName": "KIM",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IDMLFC0272118153220",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "713",
+    "RecordLocator": "IDMLFC",
+    "TicketNumber": "0272118153220",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "SE ALASKA REGIONAL HEALTH CONSORTIUM"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "401314244",
+    "CompanyMileagePlan": "401314244",
+    "LastName": "Hawaiian Housewares Ltd",
+    "FirstName": "DAVIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LVIYAX0272118513401",
+    "TransactionDate": "2023-03-10",
+    "NoOfPoints": "301",
+    "RecordLocator": "LVIYAX",
+    "TicketNumber": "0272118513401",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAIIAN HOUSEWARES LTD"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "950901195",
+    "CompanyMileagePlan": "950901195",
+    "LastName": "Word of Life Christian Center",
+    "FirstName": "TELLY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MQSBRO0272118621181",
+    "TransactionDate": "2019-10-24",
+    "NoOfPoints": "174",
+    "RecordLocator": "MQSBRO",
+    "TicketNumber": "0272118621181",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "WORD OF LIFE CHRISTIAN CENTER"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "NATALIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "AXQYBG0272118758418",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "272",
+    "RecordLocator": "AXQYBG",
+    "TicketNumber": "0272118758418",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "568649141",
+    "CompanyMileagePlan": "568649141",
+    "LastName": "Nordic PCL Construction-Execs",
+    "FirstName": "GRANT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YPBRJW0272118758180",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "138",
+    "RecordLocator": "YPBRJW",
+    "TicketNumber": "0272118758180",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "NORDIC PCL CONSTRUCTION-EXECS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "TIMOTHY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OCOUFR0272118755510",
+    "TransactionDate": "2024-11-14",
+    "NoOfPoints": "171",
+    "RecordLocator": "OCOUFR",
+    "TicketNumber": "0272118755510",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "TIMOTHY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OCOUFR0272118755506",
+    "TransactionDate": "2024-11-14",
+    "NoOfPoints": "171",
+    "RecordLocator": "OCOUFR",
+    "TicketNumber": "0272118755506",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "440340876",
+    "CompanyMileagePlan": "440340876",
+    "LastName": "HTBYB Direct Bill",
+    "FirstName": "JAMES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KWGSIL0272118765836",
+    "TransactionDate": "2020-01-08",
+    "NoOfPoints": "171",
+    "RecordLocator": "KWGSIL",
+    "TicketNumber": "0272118765836",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HTBYB-OPS 02"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "451104931",
+    "CompanyMileagePlan": "451104931",
+    "LastName": "Kaiser Permanente HI Pharmacy",
+    "FirstName": "LERYN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "APGYLI0272118662368",
+    "TransactionDate": "2025-09-28",
+    "NoOfPoints": "131",
+    "RecordLocator": "APGYLI",
+    "TicketNumber": "0272118662368",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE HI PHARMACY ADMIN"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "833477875",
+    "CompanyMileagePlan": "833477875",
+    "LastName": "Kaiser Permanente - Patient - Travel 6 191082026",
+    "FirstName": "ERIK",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SWOQHV0272118433280",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "122",
+    "RecordLocator": "SWOQHV",
+    "TicketNumber": "0272118433280",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL 6 191082026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "655498406",
+    "CompanyMileagePlan": "655498406",
+    "LastName": "Lapperts Hawaii",
+    "FirstName": "TAU ANILA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ADWRQT0272118879021",
+    "TransactionDate": "2020-03-16",
+    "NoOfPoints": "138",
+    "RecordLocator": "ADWRQT",
+    "TicketNumber": "0272118879021",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "LAPPERTS HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "902362285",
+    "CompanyMileagePlan": "902362285",
+    "LastName": "Grace Pacific LLC Shop Plants and Quarry",
+    "FirstName": "JOSHUA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OXRSKO0272118635873",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "239",
+    "RecordLocator": "OXRSKO",
+    "TicketNumber": "0272118635873",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GRACE PACIFIC LLC SHOP PLANTS AND QUARRY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "JAMES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DUBERH0272118769282",
+    "TransactionDate": "2020-02-27",
+    "NoOfPoints": "217",
+    "RecordLocator": "DUBERH",
+    "TicketNumber": "0272118769282",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "843913254",
+    "CompanyMileagePlan": "843913254",
+    "LastName": "Kazi Restaurants of Hawaii Inc Burger King",
+    "FirstName": "DWAYNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YYTGVJ0272118104583",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "138",
+    "RecordLocator": "YYTGVJ",
+    "TicketNumber": "0272118104583",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAZI FOODS OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "843913254",
+    "CompanyMileagePlan": "843913254",
+    "LastName": "Kazi Restaurants of Hawaii Inc Burger King",
+    "FirstName": "DWAYNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YYTGVJ0272118104584",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "138",
+    "RecordLocator": "YYTGVJ",
+    "TicketNumber": "0272118104584",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAZI FOODS OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "716673635",
+    "CompanyMileagePlan": "716673635",
+    "LastName": "Blasting Technology Inc.",
+    "FirstName": "RICHARD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JTNBSQ0272118355076",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "74",
+    "RecordLocator": "JTNBSQ",
+    "TicketNumber": "0272118355076",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "BLASTING TECHNOLOGY INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "629695290",
+    "CompanyMileagePlan": "629695290",
+    "LastName": "Kamoku Contracting LLC",
+    "FirstName": "AMANUEL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JZHIVP0272118654332",
+    "TransactionDate": "2019-11-04",
+    "NoOfPoints": "79",
+    "RecordLocator": "JZHIVP",
+    "TicketNumber": "0272118654332",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMOKU CONTRACTING LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "988111736",
+    "CompanyMileagePlan": "988111736",
+    "LastName": "HMS Construction, Inc",
+    "FirstName": "SANDRA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NGSOLL0272118423626",
+    "TransactionDate": "2024-06-18",
+    "NoOfPoints": "143",
+    "RecordLocator": "NGSOLL",
+    "TicketNumber": "0272118423626",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HMS CONSTRUCTION, INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "448233892",
+    "CompanyMileagePlan": "448233892",
+    "LastName": "Dorvin D Leis Co Inc",
+    "FirstName": "SUSAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "INCBDC0272118425156",
+    "TransactionDate": "2022-04-29",
+    "NoOfPoints": "299",
+    "RecordLocator": "INCBDC",
+    "TicketNumber": "0272118425156",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "DORVIN D. LEIS CO., INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545831193",
+    "CompanyMileagePlan": "545831193",
+    "LastName": "Mas Tec Network Solutions Turf",
+    "FirstName": "SPENCER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OVMMOZ0272118593512",
+    "TransactionDate": "2023-08-10",
+    "NoOfPoints": "253",
+    "RecordLocator": "OVMMOZ",
+    "TicketNumber": "0272118593512",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "MASTEC NETWORK SOLUTIONS TURF"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "834538832",
+    "CompanyMileagePlan": "834538832",
+    "LastName": "Starr and Company Inc",
+    "FirstName": "MATTHEW",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FYJEXP0272118209973",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "231",
+    "RecordLocator": "FYJEXP",
+    "TicketNumber": "0272118209973",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "STARR AND COMPANY INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "621853540",
+    "CompanyMileagePlan": "621853540",
+    "LastName": "Fukunaga Electrical Inc",
+    "FirstName": "ROSS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NODBHH0272118365354",
+    "TransactionDate": "2025-09-18",
+    "NoOfPoints": "285",
+    "RecordLocator": "NODBHH",
+    "TicketNumber": "0272118365354",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "FUKUNAGA ELECTRICAL INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "861951296",
+    "CompanyMileagePlan": "861951296",
+    "LastName": "Associa Hawaii",
+    "FirstName": "LIEUCHI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QFUOSJ0272118203303",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "175",
+    "RecordLocator": "QFUOSJ",
+    "TicketNumber": "0272118203303",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ASSOCIA HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "998598215",
+    "CompanyMileagePlan": "998598215",
+    "LastName": "Epic Ohana Conferencing",
+    "FirstName": "CHRISTENE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HEKQVR0272118315776",
+    "TransactionDate": "2019-09-22",
+    "NoOfPoints": "244",
+    "RecordLocator": "HEKQVR",
+    "TicketNumber": "0272118315776",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "EPIC OHANA CONFERENCING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "644172255",
+    "CompanyMileagePlan": "644172255",
+    "LastName": "IBEW",
+    "FirstName": "TROY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ORKDEV0272118308241",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "147",
+    "RecordLocator": "ORKDEV",
+    "TicketNumber": "0272118308241",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "IBEW"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "791074583",
+    "CompanyMileagePlan": "791074583",
+    "LastName": "American Standard Concrete Pumping Hawaii, Inc",
+    "FirstName": "SARAH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FRIHHS0272118511207",
+    "TransactionDate": "2020-02-04",
+    "NoOfPoints": "175",
+    "RecordLocator": "FRIHHS",
+    "TicketNumber": "0272118511207",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "AMERICAN STANDARD CONCRETE PUMPING HAWAII, INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "858370262",
+    "CompanyMileagePlan": "858370262",
+    "LastName": "Shioi Construction Inc",
+    "FirstName": "ALAPATI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SYFMLB0272117845989",
+    "TransactionDate": "2025-09-19",
+    "NoOfPoints": "254",
+    "RecordLocator": "SYFMLB",
+    "TicketNumber": "0272117845989",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SHIOI CONSTRUCTION INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "SELETI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NORGCM0272117663918",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "254",
+    "RecordLocator": "NORGCM",
+    "TicketNumber": "0272117663918",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "LOUIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QJHMJT0272117676965",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "282",
+    "RecordLocator": "QJHMJT",
+    "TicketNumber": "0272117676965",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "876814190",
+    "CompanyMileagePlan": "876814190",
+    "LastName": "SSFM International",
+    "FirstName": "DONALD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MYTBDQ0272117854826",
+    "TransactionDate": "2022-09-05",
+    "NoOfPoints": "240",
+    "RecordLocator": "MYTBDQ",
+    "TicketNumber": "0272117854826",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SSFM INTERNATIONAL"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "644172255",
+    "CompanyMileagePlan": "644172255",
+    "LastName": "IBEW",
+    "FirstName": "LISA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OXKZYW0272117755742",
+    "TransactionDate": "2025-09-18",
+    "NoOfPoints": "134",
+    "RecordLocator": "OXKZYW",
+    "TicketNumber": "0272117755742",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "IBEW"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "756868954",
+    "CompanyMileagePlan": "756868954",
+    "LastName": "Pacific Security Integrations",
+    "FirstName": "LEAH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KGCOSM0272118086265",
+    "TransactionDate": "2025-02-22",
+    "NoOfPoints": "138",
+    "RecordLocator": "KGCOSM",
+    "TicketNumber": "0272118086265",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EVERON"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "756868954",
+    "CompanyMileagePlan": "756868954",
+    "LastName": "Pacific Security Integrations",
+    "FirstName": "LEAH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KGCOSM0272118086264",
+    "TransactionDate": "2025-02-22",
+    "NoOfPoints": "138",
+    "RecordLocator": "KGCOSM",
+    "TicketNumber": "0272118086264",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EVERON"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847856321",
+    "CompanyMileagePlan": "847856321",
+    "LastName": "Kaiser Permanente - Patient - Travel II 191068086",
+    "FirstName": "MIRANDA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FHVEYT0272118519984",
+    "TransactionDate": "2023-08-24",
+    "NoOfPoints": "167",
+    "RecordLocator": "FHVEYT",
+    "TicketNumber": "0272118519984",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL II 191068086"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847856321",
+    "CompanyMileagePlan": "847856321",
+    "LastName": "Kaiser Permanente - Patient - Travel II 191068086",
+    "FirstName": "MIRANDA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FHVEYT0272118519985",
+    "TransactionDate": "2023-08-24",
+    "NoOfPoints": "167",
+    "RecordLocator": "FHVEYT",
+    "TicketNumber": "0272118519985",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL II 191068086"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "402867916",
+    "CompanyMileagePlan": "402867916",
+    "LastName": "Kaiser Permanente - Patient - Main Travel Dept 191026830",
+    "FirstName": "NEMELDA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FFQWTE0272118515808",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "122",
+    "RecordLocator": "FFQWTE",
+    "TicketNumber": "0272118515808",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - MAIN TRAVEL DEPT 191026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "974709993",
+    "CompanyMileagePlan": "974709993",
+    "LastName": "Pape Machinery",
+    "FirstName": "LUCI LOURDES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SXTVPQ0272118420155",
+    "TransactionDate": "2019-08-20",
+    "NoOfPoints": "151",
+    "RecordLocator": "SXTVPQ",
+    "TicketNumber": "0272118420155",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "PAPE MACHINERY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "LEAH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "UDFNPV0272118757718",
+    "TransactionDate": "2025-06-23",
+    "NoOfPoints": "134",
+    "RecordLocator": "UDFNPV",
+    "TicketNumber": "0272118757718",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "599629424",
+    "CompanyMileagePlan": "599629424",
+    "LastName": "Hawaii Care and Cleaning, Inc.",
+    "FirstName": "GUY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DOKTIK0272118415817",
+    "TransactionDate": "2021-09-06",
+    "NoOfPoints": "171",
+    "RecordLocator": "DOKTIK",
+    "TicketNumber": "0272118415817",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAII CARE AND CLEANING, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "JUSTIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MKKQEG0272118755813",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "138",
+    "RecordLocator": "MKKQEG",
+    "TicketNumber": "0272118755813",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "JUSTIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MKKQEG0272118755814",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "138",
+    "RecordLocator": "MKKQEG",
+    "TicketNumber": "0272118755814",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "536909332",
+    "CompanyMileagePlan": "536909332",
+    "LastName": "Hawaii Organ Procurement Organization",
+    "FirstName": "SARA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MYZZPM0272118816428",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "157",
+    "RecordLocator": "MYZZPM",
+    "TicketNumber": "0272118816428",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAII ORGAN PROCUREMENT ORGANIZATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "536909332",
+    "CompanyMileagePlan": "536909332",
+    "LastName": "Hawaii Organ Procurement Organization",
+    "FirstName": "SARA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MYZZPM0272118816425",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "157",
+    "RecordLocator": "MYZZPM",
+    "TicketNumber": "0272118816425",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAII ORGAN PROCUREMENT ORGANIZATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "537811875",
+    "CompanyMileagePlan": "537811875",
+    "LastName": "SOH DOE Kauai Complex Area ",
+    "FirstName": "ALLYN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NAJNNX0272118769921",
+    "TransactionDate": "2023-10-20",
+    "NoOfPoints": "147",
+    "RecordLocator": "NAJNNX",
+    "TicketNumber": "0272118769921",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SOH DOE KAUAI COMPLEX AREA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "537811875",
+    "CompanyMileagePlan": "537811875",
+    "LastName": "SOH DOE Kauai Complex Area ",
+    "FirstName": "ALLYN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NAJNNX0272118769920",
+    "TransactionDate": "2023-10-20",
+    "NoOfPoints": "147",
+    "RecordLocator": "NAJNNX",
+    "TicketNumber": "0272118769920",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SOH DOE KAUAI COMPLEX AREA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "537811875",
+    "CompanyMileagePlan": "537811875",
+    "LastName": "SOH DOE Kauai Complex Area ",
+    "FirstName": "ALLYN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NAJNNX0272118769923",
+    "TransactionDate": "2023-10-20",
+    "NoOfPoints": "147",
+    "RecordLocator": "NAJNNX",
+    "TicketNumber": "0272118769923",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SOH DOE KAUAI COMPLEX AREA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "474106286",
+    "CompanyMileagePlan": "474106286",
+    "LastName": "Seven Eleven",
+    "FirstName": "TERI LYNN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NPXHWX0272118316436",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "234",
+    "RecordLocator": "NPXHWX",
+    "TicketNumber": "0272118316436",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SEVEN-ELEVEN HAWAII, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847041506",
+    "CompanyMileagePlan": "847041506",
+    "LastName": "Jas W Glover Ltd",
+    "FirstName": "JAMES",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IXQYEP0272118519842",
+    "TransactionDate": "2025-02-16",
+    "NoOfPoints": "394",
+    "RecordLocator": "IXQYEP",
+    "TicketNumber": "0272118519842",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "JAS W GLOVER LTD"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "32238710",
+    "CompanyMileagePlan": "32238710",
+    "LastName": "UDELHOVEN OILFIELD SYSTEM",
+    "FirstName": "TYLER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JKQEPL0272118493173",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "357",
+    "RecordLocator": "JKQEPL",
+    "TicketNumber": "0272118493173",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "UDELHOVEN OILFIELD SYSTEM SERVICES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "757363331",
+    "CompanyMileagePlan": "757363331",
+    "LastName": "Papa Ola Lokahi",
+    "FirstName": "KAORI LEI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YOJWZM0272118754037",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "147",
+    "RecordLocator": "YOJWZM",
+    "TicketNumber": "0272118754037",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "PAPA OLA LOKAHI"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "458771316",
+    "CompanyMileagePlan": "458771316",
+    "LastName": "T3 Wireless and Associates Inc",
+    "FirstName": "RAMONA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IVFARU0272118758247",
+    "TransactionDate": "2024-03-04",
+    "NoOfPoints": "69",
+    "RecordLocator": "IVFARU",
+    "TicketNumber": "0272118758247",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "T3 WIRELESS AND ASSOCIATES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "465400272",
+    "CompanyMileagePlan": "465400272",
+    "LastName": "AECOS Inc",
+    "FirstName": "SUSAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LCKRVF0272118740008",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "166",
+    "RecordLocator": "LCKRVF",
+    "TicketNumber": "0272118740008",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "AECOS INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "961674335",
+    "CompanyMileagePlan": "961674335",
+    "LastName": "DEAN SH PAK, INC dba INFINITY ELECTRIC",
+    "FirstName": "GARRETT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LUWBPD0272118517399",
+    "TransactionDate": "2020-05-27",
+    "NoOfPoints": "244",
+    "RecordLocator": "LUWBPD",
+    "TicketNumber": "0272118517399",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DEAN SH PAK, INC DBA INFINITY ELECTRIC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "607958492",
+    "CompanyMileagePlan": "607958492",
+    "LastName": "Island Flooring",
+    "FirstName": "ASHLEY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FAHGWY0272118516348",
+    "TransactionDate": "2024-03-04",
+    "NoOfPoints": "271",
+    "RecordLocator": "FAHGWY",
+    "TicketNumber": "0272118516348",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ISLAND FLOORING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "961674335",
+    "CompanyMileagePlan": "961674335",
+    "LastName": "DEAN SH PAK, INC dba INFINITY ELECTRIC",
+    "FirstName": "GARRETT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LUWBPD0272118517400",
+    "TransactionDate": "2020-05-27",
+    "NoOfPoints": "244",
+    "RecordLocator": "LUWBPD",
+    "TicketNumber": "0272118517400",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DEAN SH PAK, INC DBA INFINITY ELECTRIC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "961674335",
+    "CompanyMileagePlan": "961674335",
+    "LastName": "DEAN SH PAK, INC dba INFINITY ELECTRIC",
+    "FirstName": "GARRETT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LUWBPD0272118517401",
+    "TransactionDate": "2020-05-27",
+    "NoOfPoints": "244",
+    "RecordLocator": "LUWBPD",
+    "TicketNumber": "0272118517401",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "DEAN SH PAK, INC DBA INFINITY ELECTRIC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "854523261",
+    "CompanyMileagePlan": "854523261",
+    "LastName": "Affiliated Construction",
+    "FirstName": "RYDER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WFILPZ0272118195013",
+    "TransactionDate": "2020-10-21",
+    "NoOfPoints": "161",
+    "RecordLocator": "WFILPZ",
+    "TicketNumber": "0272118195013",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "AFFILIATED CONSTRUCTION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "135022381",
+    "CompanyMileagePlan": "135022381",
+    "LastName": "KLAWOCK COOPERATIVE ASSOCI",
+    "FirstName": "STEVEN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FEHQCT0272117661268",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "1106",
+    "RecordLocator": "FEHQCT",
+    "TicketNumber": "0272117661268",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KLAWOCK COOPERATIVE ASSOCIATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "782752051",
+    "CompanyMileagePlan": "782752051",
+    "LastName": "GK Appraisals, Inc.",
+    "FirstName": "GARY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KSHFEO0272118146383",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "185",
+    "RecordLocator": "KSHFEO",
+    "TicketNumber": "0272118146383",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "GK APPRAISALS, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "940300476",
+    "CompanyMileagePlan": "940300476",
+    "LastName": "Aloha Infectious Diseases LLC",
+    "FirstName": "FRANCESCO",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QSCICH0272118437619",
+    "TransactionDate": "2023-01-11",
+    "NoOfPoints": "415",
+    "RecordLocator": "QSCICH",
+    "TicketNumber": "0272118437619",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ALOHA INFECTIOUS DISEASES LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "JELORD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QGCNFF0272117655283",
+    "TransactionDate": "2024-11-07",
+    "NoOfPoints": "245",
+    "RecordLocator": "QGCNFF",
+    "TicketNumber": "0272117655283",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "854523261",
+    "CompanyMileagePlan": "854523261",
+    "LastName": "Affiliated Construction",
+    "FirstName": "BRONSON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JQTSFZ0272118202311",
+    "TransactionDate": "2019-08-02",
+    "NoOfPoints": "248",
+    "RecordLocator": "JQTSFZ",
+    "TicketNumber": "0272118202311",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "AFFILIATED CONSTRUCTION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "998598215",
+    "CompanyMileagePlan": "998598215",
+    "LastName": "Epic Ohana Conferencing",
+    "FirstName": "KAYLA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "GOZYVM0272118093660",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "222",
+    "RecordLocator": "GOZYVM",
+    "TicketNumber": "0272118093660",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EPIC OHANA CONFERENCING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "569605794",
+    "CompanyMileagePlan": "569605794",
+    "LastName": "Bowers and Kubota Consulting",
+    "FirstName": "RYAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QQZGZI0272118306813",
+    "TransactionDate": "2021-06-01",
+    "NoOfPoints": "203",
+    "RecordLocator": "QQZGZI",
+    "TicketNumber": "0272118306813",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "BOWERS AND KUBOTA CONSULTING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "861951296",
+    "CompanyMileagePlan": "861951296",
+    "LastName": "Associa Hawaii",
+    "FirstName": "LIEUCHI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DWJBTD0272118090663",
+    "TransactionDate": "2022-04-27",
+    "NoOfPoints": "175",
+    "RecordLocator": "DWJBTD",
+    "TicketNumber": "0272118090663",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "ASSOCIA HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545831193",
+    "CompanyMileagePlan": "545831193",
+    "LastName": "Mas Tec Network Solutions Turf",
+    "FirstName": "KEVIN CHRISTOPHER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HQMKJT0272117860328",
+    "TransactionDate": "2023-04-27",
+    "NoOfPoints": "180",
+    "RecordLocator": "HQMKJT",
+    "TicketNumber": "0272117860328",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MASTEC NETWORK SOLUTIONS TURF"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "ARNOLD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NJPDSF0272118767517",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "88",
+    "RecordLocator": "NJPDSF",
+    "TicketNumber": "0272118767517",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "555906875",
+    "CompanyMileagePlan": "555906875",
+    "LastName": "KAISER TRAVEL-NORA",
+    "FirstName": "NANCY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MQNUKA0272118519682",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "122",
+    "RecordLocator": "MQNUKA",
+    "TicketNumber": "0272118519682",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAISER TRAVEL-NORA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "948820375",
+    "CompanyMileagePlan": "948820375",
+    "LastName": "Group Builders Inc ",
+    "FirstName": "BRETT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OBIDGG0272118742302",
+    "TransactionDate": "2023-11-27",
+    "NoOfPoints": "227",
+    "RecordLocator": "OBIDGG",
+    "TicketNumber": "0272118742302",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "GROUP BUILDERS INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "992346003",
+    "CompanyMileagePlan": "992346003",
+    "LastName": "Servco Corporate Admin",
+    "FirstName": "TAYLOR",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QOWZNF0272118306946",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "166",
+    "RecordLocator": "QOWZNF",
+    "TicketNumber": "0272118306946",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SERVCO CORPORATE ADMIN"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "23816914",
+    "CompanyMileagePlan": "23816914",
+    "LastName": "ALYESKA PIPELINE SERVICE",
+    "FirstName": "CHRISTOPHER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HQIJBU0272118130721",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "613",
+    "RecordLocator": "HQIJBU",
+    "TicketNumber": "0272118130721",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ALYESKA PIPELINE SERVICE COMPANY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "158101510",
+    "CompanyMileagePlan": "158101510",
+    "LastName": "MARITIME HELICOPTERS, INC",
+    "FirstName": "ELANA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MMHYZM0272118840256",
+    "TransactionDate": "2019-08-07",
+    "NoOfPoints": "413",
+    "RecordLocator": "MMHYZM",
+    "TicketNumber": "0272118840256",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MARITIME HELICOPTERS, INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "402867916",
+    "CompanyMileagePlan": "402867916",
+    "LastName": "Kaiser Permanente - Patient - Main Travel Dept 191026830",
+    "FirstName": "THOMAS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QUYKTA0272118428786",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "122",
+    "RecordLocator": "QUYKTA",
+    "TicketNumber": "0272118428786",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - MAIN TRAVEL DEPT 191026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "555906875",
+    "CompanyMileagePlan": "555906875",
+    "LastName": "KAISER TRAVEL-NORA",
+    "FirstName": "JASLYNNE KAUIONAPUA MEI YI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WMXONL0272118520645",
+    "TransactionDate": "2023-01-04",
+    "NoOfPoints": "97",
+    "RecordLocator": "WMXONL",
+    "TicketNumber": "0272118520645",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER TRAVEL-NORA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "716673635",
+    "CompanyMileagePlan": "716673635",
+    "LastName": "Blasting Technology Inc.",
+    "FirstName": "DONALD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "GFXIVT0272118304590",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "259",
+    "RecordLocator": "GFXIVT",
+    "TicketNumber": "0272118304590",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "BLASTING TECHNOLOGY INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "809397514",
+    "CompanyMileagePlan": "809397514",
+    "LastName": "KCK Builders LLC",
+    "FirstName": "LOUIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "AQRVCE0272118295314",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "314",
+    "RecordLocator": "AQRVCE",
+    "TicketNumber": "0272118295314",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KCK BUILDERS LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "716673635",
+    "CompanyMileagePlan": "716673635",
+    "LastName": "Blasting Technology Inc.",
+    "FirstName": "SAWYER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WZTZLM0272118305295",
+    "TransactionDate": "2020-12-28",
+    "NoOfPoints": "227",
+    "RecordLocator": "WZTZLM",
+    "TicketNumber": "0272118305295",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "BLASTING TECHNOLOGY INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "765164444",
+    "CompanyMileagePlan": "765164444",
+    "LastName": "Beachside Roofing, LLC",
+    "FirstName": "ROBERT",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "AVNYAB0272118309940",
+    "TransactionDate": "2025-09-19",
+    "NoOfPoints": "134",
+    "RecordLocator": "AVNYAB",
+    "TicketNumber": "0272118309940",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "BEACHSIDE ROOFING, LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "621853540",
+    "CompanyMileagePlan": "621853540",
+    "LastName": "Fukunaga Electrical Inc",
+    "FirstName": "RYLAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JHIWXF0272118035663",
+    "TransactionDate": "2021-12-08",
+    "NoOfPoints": "170",
+    "RecordLocator": "JHIWXF",
+    "TicketNumber": "0272118035663",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "FUKUNAGA ELECTRICAL INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "454675454",
+    "CompanyMileagePlan": "454675454",
+    "LastName": "Kaiser Permanente - Hawaii Permanente Medical Group 191017482",
+    "FirstName": "CATHERINE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ITZBHT0272117684502",
+    "TransactionDate": "2019-08-30",
+    "NoOfPoints": "193",
+    "RecordLocator": "ITZBHT",
+    "TicketNumber": "0272117684502",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - HAWAII PERMANENTE MEDICAL GROUP 1"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "946222104",
+    "CompanyMileagePlan": "946222104",
+    "LastName": "Outrigger Hotels and Resorts:  Exec Office",
+    "FirstName": "ANNY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "USTVCQ0272118521040",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "277",
+    "RecordLocator": "USTVCQ",
+    "TicketNumber": "0272118521040",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "OUTRIGGER HOTELS AND RESORTS   EXEC OFFICE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847449256",
+    "CompanyMileagePlan": "847449256",
+    "LastName": "Enterprise Holdings 1",
+    "FirstName": "MATTHEW",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JTZYAA0272118089219",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "129",
+    "RecordLocator": "JTZYAA",
+    "TicketNumber": "0272118089219",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ENTERPRISE MOBILITY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "984083811",
+    "CompanyMileagePlan": "984083811",
+    "LastName": "Hawaiian Dredging Construction Co Maui",
+    "FirstName": "IMRAAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OCTCRL0272118763890",
+    "TransactionDate": "2025-05-20",
+    "NoOfPoints": "282",
+    "RecordLocator": "OCTCRL",
+    "TicketNumber": "0272118763890",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAIIAN DREDGING CONSTRUCTION CO MAUI"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847449256",
+    "CompanyMileagePlan": "847449256",
+    "LastName": "Enterprise Holdings 1",
+    "FirstName": "DANIEL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "KHOBYI0272118089709",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "129",
+    "RecordLocator": "KHOBYI",
+    "TicketNumber": "0272118089709",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ENTERPRISE MOBILITY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847449256",
+    "CompanyMileagePlan": "847449256",
+    "LastName": "Enterprise Holdings 1",
+    "FirstName": "PATRICK",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DBGGUN0272118088150",
+    "TransactionDate": "2019-08-10",
+    "NoOfPoints": "129",
+    "RecordLocator": "DBGGUN",
+    "TicketNumber": "0272118088150",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "ENTERPRISE MOBILITY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "37083130",
+    "CompanyMileagePlan": "37083130",
+    "LastName": "TANANA CHIEFS CONFERENCE I",
+    "FirstName": "PATRICK",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MAKVCB0272117723034",
+    "TransactionDate": "2025-09-18",
+    "NoOfPoints": "546",
+    "RecordLocator": "MAKVCB",
+    "TicketNumber": "0272117723034",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "TANANA CHIEFS CONFERENCE INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "SELETI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HJIGQA0272118480448",
+    "TransactionDate": "2025-09-19",
+    "NoOfPoints": "147",
+    "RecordLocator": "HJIGQA",
+    "TicketNumber": "0272118480448",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "60875172",
+    "CompanyMileagePlan": "60875172",
+    "LastName": "ASRC ENERGY SERVICES",
+    "FirstName": "TERESA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DSUQDW0272117901795",
+    "TransactionDate": "2025-09-20",
+    "NoOfPoints": "792",
+    "RecordLocator": "DSUQDW",
+    "TicketNumber": "0272117901795",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ASRC ENERGY SERVICES"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "941628284",
+    "CompanyMileagePlan": "941628284",
+    "LastName": "Tori Richard, Ltd.",
+    "FirstName": "MATTHEW",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FLAWLF0272118313464",
+    "TransactionDate": "2022-04-27",
+    "NoOfPoints": "175",
+    "RecordLocator": "FLAWLF",
+    "TicketNumber": "0272118313464",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "TORI RICHARD, LTD."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "402867916",
+    "CompanyMileagePlan": "402867916",
+    "LastName": "Kaiser Permanente - Patient - Main Travel Dept 191026830",
+    "FirstName": "ANYA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JICZNI0272118430688",
+    "TransactionDate": "2020-01-16",
+    "NoOfPoints": "140",
+    "RecordLocator": "JICZNI",
+    "TicketNumber": "0272118430688",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - MAIN TRAVEL DEPT 191026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "569605794",
+    "CompanyMileagePlan": "569605794",
+    "LastName": "Bowers and Kubota Consulting",
+    "FirstName": "KEVIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LGVTVM0272118180449",
+    "TransactionDate": "2025-08-02",
+    "NoOfPoints": "175",
+    "RecordLocator": "LGVTVM",
+    "TicketNumber": "0272118180449",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "BOWERS AND KUBOTA CONSULTING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "998598215",
+    "CompanyMileagePlan": "998598215",
+    "LastName": "Epic Ohana Conferencing",
+    "FirstName": "SPENCER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QANTLT0272118081703",
+    "TransactionDate": "2019-07-31",
+    "NoOfPoints": "171",
+    "RecordLocator": "QANTLT",
+    "TicketNumber": "0272118081703",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EPIC OHANA CONFERENCING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "998598215",
+    "CompanyMileagePlan": "998598215",
+    "LastName": "Epic Ohana Conferencing",
+    "FirstName": "SPENCER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QANTLT0272118081704",
+    "TransactionDate": "2019-07-31",
+    "NoOfPoints": "171",
+    "RecordLocator": "QANTLT",
+    "TicketNumber": "0272118081704",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EPIC OHANA CONFERENCING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "134734110",
+    "CompanyMileagePlan": "134734110",
+    "LastName": "GOODFELLOW BROS., INC.",
+    "FirstName": "CHINTAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QFZAFM0272118744705",
+    "TransactionDate": "2020-06-02",
+    "NoOfPoints": "222",
+    "RecordLocator": "QFZAFM",
+    "TicketNumber": "0272118744705",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GOODFELLOW BROS., INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "555906875",
+    "CompanyMileagePlan": "555906875",
+    "LastName": "KAISER TRAVEL-NORA",
+    "FirstName": "TIARE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NWPRIA0272118514522",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "193",
+    "RecordLocator": "NWPRIA",
+    "TicketNumber": "0272118514522",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER TRAVEL-NORA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "843913254",
+    "CompanyMileagePlan": "843913254",
+    "LastName": "Kazi Restaurants of Hawaii Inc Burger King",
+    "FirstName": "MARSHA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NRCANF0272118324783",
+    "TransactionDate": "2024-04-27",
+    "NoOfPoints": "157",
+    "RecordLocator": "NRCANF",
+    "TicketNumber": "0272118324783",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAZI FOODS OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "61824431",
+    "CompanyMileagePlan": "61824431",
+    "LastName": "HEALTH COST MANAGEMENT",
+    "FirstName": "RICHARD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DZFYVX0272118095118",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "79",
+    "RecordLocator": "DZFYVX",
+    "TicketNumber": "0272118095118",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HEALTH COST MANAGEMENT"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "906252001",
+    "CompanyMileagePlan": "906252001",
+    "LastName": "Goodsill Anderson Quinn and Stifel",
+    "FirstName": "FOREST",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QMYZMI0272117674711",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "129",
+    "RecordLocator": "QMYZMI",
+    "TicketNumber": "0272117674711",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GOODSILL ANDERSON QUINN AND STIFEL"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "861951296",
+    "CompanyMileagePlan": "861951296",
+    "LastName": "Associa Hawaii",
+    "FirstName": "LIEUCHI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DWJBTD0272118090664",
+    "TransactionDate": "2022-04-27",
+    "NoOfPoints": "175",
+    "RecordLocator": "DWJBTD",
+    "TicketNumber": "0272118090664",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "ASSOCIA HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "524734151",
+    "CompanyMileagePlan": "524734151",
+    "LastName": "Loomis",
+    "FirstName": "ANNABELLE ROSAMOND",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OUCLZW0272118309959",
+    "TransactionDate": "2024-08-09",
+    "NoOfPoints": "152",
+    "RecordLocator": "OUCLZW",
+    "TicketNumber": "0272118309959",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "LOOMIS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "148543835",
+    "CompanyMileagePlan": "148543835",
+    "LastName": "EL CAPITAN LODGE",
+    "FirstName": "HEIDI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "EGRUPN0272118222312",
+    "TransactionDate": "2025-09-23",
+    "NoOfPoints": "175",
+    "RecordLocator": "EGRUPN",
+    "TicketNumber": "0272118222312",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "EL CAPITAN LODGE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "524734151",
+    "CompanyMileagePlan": "524734151",
+    "LastName": "Loomis",
+    "FirstName": "BRYAN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "YUMVLA0272118314101",
+    "TransactionDate": "2025-09-24",
+    "NoOfPoints": "185",
+    "RecordLocator": "YUMVLA",
+    "TicketNumber": "0272118314101",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "LOOMIS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "941628284",
+    "CompanyMileagePlan": "941628284",
+    "LastName": "Tori Richard, Ltd.",
+    "FirstName": "VICTORIA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DBJGSL0272118088437",
+    "TransactionDate": "2023-09-19",
+    "NoOfPoints": "138",
+    "RecordLocator": "DBJGSL",
+    "TicketNumber": "0272118088437",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "TORI RICHARD, LTD."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "502730605",
+    "CompanyMileagePlan": "502730605",
+    "LastName": "TD Food Group Inc",
+    "FirstName": "GLENN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "CSDJDH0272118125988",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "171",
+    "RecordLocator": "CSDJDH",
+    "TicketNumber": "0272118125988",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "RBD HAWAII RESTAURANTS LIMITED"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "448233892",
+    "CompanyMileagePlan": "448233892",
+    "LastName": "Dorvin D Leis Co Inc",
+    "FirstName": "ALICE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "JELOYA0272117847717",
+    "TransactionDate": "2021-11-28",
+    "NoOfPoints": "171",
+    "RecordLocator": "JELOYA",
+    "TicketNumber": "0272117847717",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "DORVIN D. LEIS CO., INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "629695290",
+    "CompanyMileagePlan": "629695290",
+    "LastName": "Kamoku Contracting LLC",
+    "FirstName": "KEHAU",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FFHZNV0272118523720",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "102",
+    "RecordLocator": "FFHZNV",
+    "TicketNumber": "0272118523720",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMOKU CONTRACTING LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "629695290",
+    "CompanyMileagePlan": "629695290",
+    "LastName": "Kamoku Contracting LLC",
+    "FirstName": "KEHAU",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FFHZNV0272118523721",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "102",
+    "RecordLocator": "FFHZNV",
+    "TicketNumber": "0272118523721",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAMOKU CONTRACTING LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "458771316",
+    "CompanyMileagePlan": "458771316",
+    "LastName": "T3 Wireless and Associates Inc",
+    "FirstName": "TIMOTHY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "EIMLIY0272118506322",
+    "TransactionDate": "2020-07-02",
+    "NoOfPoints": "115",
+    "RecordLocator": "EIMLIY",
+    "TicketNumber": "0272118506322",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "T3 WIRELESS AND ASSOCIATES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "421169534",
+    "CompanyMileagePlan": "421169534",
+    "LastName": "Matson Terminals",
+    "FirstName": "DHAIRYA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HDMLHD0272118628894",
+    "TransactionDate": "2021-05-09",
+    "NoOfPoints": "174",
+    "RecordLocator": "HDMLHD",
+    "TicketNumber": "0272118628894",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "MATSON NAVIGATION PACIFIC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "535215925",
+    "CompanyMileagePlan": "535215925",
+    "LastName": "Central Pacific Bank",
+    "FirstName": "PEGGY",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LZZFXN0272118588997",
+    "TransactionDate": "2019-05-24",
+    "NoOfPoints": "222",
+    "RecordLocator": "LZZFXN",
+    "TicketNumber": "0272118588997",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "CENTRAL PACIFIC BANK"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "847856321",
+    "CompanyMileagePlan": "847856321",
+    "LastName": "Kaiser Permanente - Patient - Travel II 191068086",
+    "FirstName": "STEPHEN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FNYNCL0272118509639",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "70",
+    "RecordLocator": "FNYNCL",
+    "TicketNumber": "0272118509639",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL II 191068086"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "15111773",
+    "CompanyMileagePlan": "15111773",
+    "LastName": "NEW HORIZONS TELECOM INC",
+    "FirstName": "CLAUDIA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WEIVEY0272118465084",
+    "TransactionDate": "2021-09-18",
+    "NoOfPoints": "264",
+    "RecordLocator": "WEIVEY",
+    "TicketNumber": "0272118465084",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "NEW HORIZONS TELECOM INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "854523261",
+    "CompanyMileagePlan": "854523261",
+    "LastName": "Affiliated Construction",
+    "FirstName": "BRONSON",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QIVNWR0272118089232",
+    "TransactionDate": "2025-09-22",
+    "NoOfPoints": "138",
+    "RecordLocator": "QIVNWR",
+    "TicketNumber": "0272118089232",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "AFFILIATED CONSTRUCTION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "HARPER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DVPAOV0272118780563",
+    "TransactionDate": "2025-06-21",
+    "NoOfPoints": "147",
+    "RecordLocator": "DVPAOV",
+    "TicketNumber": "0272118780563",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "HARPER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DVPAOV0272118780564",
+    "TransactionDate": "2025-06-21",
+    "NoOfPoints": "147",
+    "RecordLocator": "DVPAOV",
+    "TicketNumber": "0272118780564",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "935318720",
+    "CompanyMileagePlan": "935318720",
+    "LastName": "KS Kaipuwaiola 99",
+    "FirstName": "HARPER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "DVPAOV0272118780565",
+    "TransactionDate": "2025-06-21",
+    "NoOfPoints": "147",
+    "RecordLocator": "DVPAOV",
+    "TicketNumber": "0272118780565",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "KAMEHAMEHA SCHOOLS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "843913254",
+    "CompanyMileagePlan": "843913254",
+    "LastName": "Kazi Restaurants of Hawaii Inc Burger King",
+    "FirstName": "AMY M",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WBLNUI0272118792620",
+    "TransactionDate": "2024-04-02",
+    "NoOfPoints": "185",
+    "RecordLocator": "WBLNUI",
+    "TicketNumber": "0272118792620",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAZI FOODS OF HAWAII"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "536909332",
+    "CompanyMileagePlan": "536909332",
+    "LastName": "Hawaii Organ Procurement Organization",
+    "FirstName": "DOUGLAS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OKPPZL0272118768613",
+    "TransactionDate": "2023-07-05",
+    "NoOfPoints": "222",
+    "RecordLocator": "OKPPZL",
+    "TicketNumber": "0272118768613",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAII ORGAN PROCUREMENT ORGANIZATION"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "568649141",
+    "CompanyMileagePlan": "568649141",
+    "LastName": "Nordic PCL Construction-Execs",
+    "FirstName": "YVONNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "CGHOUK0272118754161",
+    "TransactionDate": "2021-01-23",
+    "NoOfPoints": "138",
+    "RecordLocator": "CGHOUK",
+    "TicketNumber": "0272118754161",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "NORDIC PCL CONSTRUCTION-EXECS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "VANCE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OBVUXE0272118766750",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "213",
+    "RecordLocator": "OBVUXE",
+    "TicketNumber": "0272118766750",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "STEELE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OVHPAV0272118755509",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "171",
+    "RecordLocator": "OVHPAV",
+    "TicketNumber": "0272118755509",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "716554101",
+    "CompanyMileagePlan": "716554101",
+    "LastName": "Social Impact International",
+    "FirstName": "BRENDA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "WLGXCO0272118829248",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "156",
+    "RecordLocator": "WLGXCO",
+    "TicketNumber": "0272118829248",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "SOCIAL IMPACT INTERNATIONAL"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "562068080",
+    "CompanyMileagePlan": "562068080",
+    "LastName": "Jason M Laird, MD, LLC",
+    "FirstName": "JOSEPH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OTYIQU0272118906124",
+    "TransactionDate": "2023-06-21",
+    "NoOfPoints": "138",
+    "RecordLocator": "OTYIQU",
+    "TicketNumber": "0272118906124",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "JASON M LAIRD, MD, LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "602431351",
+    "CompanyMileagePlan": "602431351",
+    "LastName": "Certified Construction",
+    "FirstName": "BENJAMIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NHORDY0272118864160",
+    "TransactionDate": "2023-07-26",
+    "NoOfPoints": "102",
+    "RecordLocator": "NHORDY",
+    "TicketNumber": "0272118864160",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "CERTIFIED CONSTRUCTION INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "568649141",
+    "CompanyMileagePlan": "568649141",
+    "LastName": "Nordic PCL Construction-Execs",
+    "FirstName": "YVONNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "CGHOUK0272118754160",
+    "TransactionDate": "2021-01-23",
+    "NoOfPoints": "138",
+    "RecordLocator": "CGHOUK",
+    "TicketNumber": "0272118754160",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "NORDIC PCL CONSTRUCTION-EXECS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "537811875",
+    "CompanyMileagePlan": "537811875",
+    "LastName": "SOH DOE Kauai Complex Area ",
+    "FirstName": "ALLYN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NAJNNX0272118769922",
+    "TransactionDate": "2023-10-20",
+    "NoOfPoints": "147",
+    "RecordLocator": "NAJNNX",
+    "TicketNumber": "0272118769922",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "SOH DOE KAUAI COMPLEX AREA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "602431351",
+    "CompanyMileagePlan": "602431351",
+    "LastName": "Certified Construction",
+    "FirstName": "BENJAMIN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NHORDY0272118863791",
+    "TransactionDate": "2023-07-26",
+    "NoOfPoints": "102",
+    "RecordLocator": "NHORDY",
+    "TicketNumber": "0272118863791",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "CERTIFIED CONSTRUCTION INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "794445083",
+    "CompanyMileagePlan": "794445083",
+    "LastName": "Maui Electric Company Meter Shop",
+    "FirstName": "WAYNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "IOSPXO0272118879451",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "185",
+    "RecordLocator": "IOSPXO",
+    "TicketNumber": "0272118879451",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "HAWAIIAN ELECTRIC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "998598215",
+    "CompanyMileagePlan": "998598215",
+    "LastName": "Epic Ohana Conferencing",
+    "FirstName": "DEANNA",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ICKUPJ0272118906448",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "138",
+    "RecordLocator": "ICKUPJ",
+    "TicketNumber": "0272118906448",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "EPIC OHANA CONFERENCING"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "VANCE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OBVUXE0272118766746",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "213",
+    "RecordLocator": "OBVUXE",
+    "TicketNumber": "0272118766746",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "VANCE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OBVUXE0272118766751",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "213",
+    "RecordLocator": "OBVUXE",
+    "TicketNumber": "0272118766751",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "458771316",
+    "CompanyMileagePlan": "458771316",
+    "LastName": "T3 Wireless and Associates Inc",
+    "FirstName": "TAL",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NMWFAH0272118884441",
+    "TransactionDate": "2025-09-30",
+    "NoOfPoints": "69",
+    "RecordLocator": "NMWFAH",
+    "TicketNumber": "0272118884441",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "T3 WIRELESS AND ASSOCIATES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "833477875",
+    "CompanyMileagePlan": "833477875",
+    "LastName": "Kaiser Permanente - Patient - Travel 6 191082026",
+    "FirstName": "LORIANNIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SZDDND0272118429774",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "131",
+    "RecordLocator": "SZDDND",
+    "TicketNumber": "0272118429774",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - TRAVEL 6 191082026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "810160330",
+    "CompanyMileagePlan": "810160330",
+    "LastName": "Hawaii Stevedores Inc Dispatch I",
+    "FirstName": "CHUCK",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FDAPRQ0272118515497",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "342",
+    "RecordLocator": "FDAPRQ",
+    "TicketNumber": "0272118515497",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "HAWAII STEVEDORES INC DISPATCH I"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545564880",
+    "CompanyMileagePlan": "545564880",
+    "LastName": "MCCABE HAMILTON & RENNY",
+    "FirstName": "STEELE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "OVHPAV0272118755511",
+    "TransactionDate": "2025-09-29",
+    "NoOfPoints": "171",
+    "RecordLocator": "OVHPAV",
+    "TicketNumber": "0272118755511",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MCCABE HAMILTON   RENNY"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "568649141",
+    "CompanyMileagePlan": "568649141",
+    "LastName": "Nordic PCL Construction-Execs",
+    "FirstName": "ANNE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "ITDLRB0272118757362",
+    "TransactionDate": "2021-04-19",
+    "NoOfPoints": "138",
+    "RecordLocator": "ITDLRB",
+    "TicketNumber": "0272118757362",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "NORDIC PCL CONSTRUCTION-EXECS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "811362241",
+    "CompanyMileagePlan": "811362241",
+    "LastName": "Modivcare",
+    "FirstName": "DANIELLE ELIZABETH",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "AWJYYU0272118758481",
+    "TransactionDate": "2019-10-28",
+    "NoOfPoints": "107",
+    "RecordLocator": "AWJYYU",
+    "TicketNumber": "0272118758481",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MODIVCARE"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "34000536",
+    "CompanyMileagePlan": "34000536",
+    "LastName": "PEAK OILFIELD SERVICE COMP",
+    "FirstName": "DONALD",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NKONXP0272118581158",
+    "TransactionDate": "2025-09-27",
+    "NoOfPoints": "1836",
+    "RecordLocator": "NKONXP",
+    "TicketNumber": "0272118581158",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "CCI INDUSTRIAL SERVICES, LLC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "555906875",
+    "CompanyMileagePlan": "555906875",
+    "LastName": "KAISER TRAVEL-NORA",
+    "FirstName": "YUEH MING",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NZZAYI0272118515037",
+    "TransactionDate": "2025-07-06",
+    "NoOfPoints": "140",
+    "RecordLocator": "NZZAYI",
+    "TicketNumber": "0272118515037",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER TRAVEL-NORA"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "474061803",
+    "CompanyMileagePlan": "474061803",
+    "LastName": "Smalt and Company, Inc",
+    "FirstName": "TAANI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "MZQMWJ0272118729670",
+    "TransactionDate": "2025-09-28",
+    "NoOfPoints": "157",
+    "RecordLocator": "MZQMWJ",
+    "TicketNumber": "0272118729670",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "SMALT AND COMPANY, INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "402867916",
+    "CompanyMileagePlan": "402867916",
+    "LastName": "Kaiser Permanente - Patient - Main Travel Dept 191026830",
+    "FirstName": "CARLOS",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "SXATJF0272118429766",
+    "TransactionDate": "2025-09-25",
+    "NoOfPoints": "167",
+    "RecordLocator": "SXATJF",
+    "TicketNumber": "0272118429766",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "KAISER PERMANENTE - PATIENT - MAIN TRAVEL DEPT 191026"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "620707382",
+    "CompanyMileagePlan": "620707382",
+    "LastName": "Young Brothers",
+    "FirstName": "GREG",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NZDQUC0272118749148",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "254",
+    "RecordLocator": "NZDQUC",
+    "TicketNumber": "0272118749148",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "YOUNG BROTHERS"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "134734110",
+    "CompanyMileagePlan": "134734110",
+    "LastName": "GOODFELLOW BROS., INC.",
+    "FirstName": "WYLIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "LTFTAI0272118510782",
+    "TransactionDate": "2025-09-26",
+    "NoOfPoints": "79",
+    "RecordLocator": "LTFTAI",
+    "TicketNumber": "0272118510782",
+    "BookingStatus": "ACTIVE",
+    "CompanyInfo": [
+      "GOODFELLOW BROS., INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "667818034",
+    "CompanyMileagePlan": "667818034",
+    "LastName": "Architects Pacific, Inc. & J3 Construction, Inc.",
+    "FirstName": "STEPHEN",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "FOIXRL0272118736026",
+    "TransactionDate": "2019-09-05",
+    "NoOfPoints": "236",
+    "RecordLocator": "FOIXRL",
+    "TicketNumber": "0272118736026",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "ARCHITECTS PACIFIC, INC.   J3 CONSTRUCTION, INC."
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "MATTHEWDELO",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QIWRJT0272117663919",
+    "TransactionDate": "2022-04-23",
+    "NoOfPoints": "254",
+    "RecordLocator": "QIWRJT",
+    "TicketNumber": "0272117663919",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "LOUIE",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "QJHMJT0272117676964",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "282",
+    "RecordLocator": "QJHMJT",
+    "TicketNumber": "0272117676964",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "SELETI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NORGCM0272118217920",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "254",
+    "RecordLocator": "NORGCM",
+    "TicketNumber": "0272118217920",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "951997653",
+    "CompanyMileagePlan": "951997653",
+    "LastName": "Pacific AquaScapes Inc",
+    "FirstName": "SELETI",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "NORGCM0272118217909",
+    "TransactionDate": "2025-09-17",
+    "NoOfPoints": "254",
+    "RecordLocator": "NORGCM",
+    "TicketNumber": "0272118217909",
+    "BookingStatus": "FLOWN",
+    "CompanyInfo": [
+      "PACIFIC AQUASCAPES INC"
+    ],
+    "Issues": []
+  },
+  {
+    "MileagePlanNumber": "545831193",
+    "CompanyMileagePlan": "545831193",
+    "LastName": "Mas Tec Network Solutions Turf",
+    "FirstName": "KEVIN CHRISTOPHER",
+    "ProductCode": "EZEZP",
+    "PartnerCode": "AFB",
+    "PartnerRefCD": "HQMKJT0272117860329",
+    "TransactionDate": "2023-04-27",
+    "NoOfPoints": "180",
+    "RecordLocator": "HQMKJT",
+    "TicketNumber": "0272117860329",
+    "BookingStatus": "STARTED",
+    "CompanyInfo": [
+      "MASTEC NETWORK SOLUTIONS TURF"
+    ],
+    "Issues": []
+  }
+]

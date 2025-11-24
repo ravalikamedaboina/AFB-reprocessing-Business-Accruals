@@ -139,3 +139,7 @@ dist/
 *.backup
 *.bak
 *.orig
+
+# Large data files
+**/afb-customers-only.json
+reports/**/afb-customers-only.json
